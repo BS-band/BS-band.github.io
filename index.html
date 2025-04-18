@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSband - Rocková Kapela Pardubice</title>
+    <meta name="description" content="BS Band - Živá rocková kapela z Pardubic pro vaši svatbu, ples, zábavu, oslavu. Hrajeme rock, pop i taneční hity.">
+    <meta name="keywords" content="kapela, kapela na svatbu, hudba, rock, živá hudba, zábava, Východní Čechy, Pardubice, Hradec Králové, BS Band, cover band">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+		<!-- Facebook SDK -->
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v22.0"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link href="assets/images/logoBSband.jpg" rel="shortcut icon" type="image/x-icon" />
+    <link href="assets/images/logoBSband.jpg" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">BS band</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <svg viewBox="0 0 100 80" width="30" height="30" class="hamburger-icon">
+                        <rect width="100" height="15" rx="8"></rect>
+                        <rect y="30" width="100" height="15" rx="8"></rect>
+                        <rect y="60" width="100" height="15" rx="8"></rect>
+                    </svg>
+                     <svg viewBox="0 0 80 80" width="30" height="30" class="close-icon">
+                        <line x1="20" y1="20" x2="60" y2="60" stroke-width="10" stroke-linecap="round"/>
+                        <line x1="60" y1="20" x2="20" y2="60" stroke-width="10" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html" class="active">Úvod</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="ukazky.html">Ukázky</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Zahrajeme nejen rockové hity</h1>
+                <p class="subtitle">Na Vaší svatbě, plese, zábavě, narozeninách. Vždy 100% naživo!</p>
+                <p class="bands-list">Kabát, Harlej, Tři sestry, Brichta, Rybičky 48, AC/DC, Twisted Sister, The Clash, Olympic, Horkýže Slíže, Plexis, Škwor, Unisono, Lucie, Chinaski, Kryštof, Mandrage, NoName, Katapult, Žlutý pes, Visací zámek, Keks a další...</p>
+                 <a href="#about" class="btn btn-primary scroll-link">Více o nás</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container text-center">
+                <h2>BS band</h2>
+                <p class="lead">Cover Band z Pardubic hrající vlastní i převzaté /nejen/ rockové pecky a fláky pro všechny generace.</p>
+                <p>Zahrajeme všechny žánry od rocku přes pop až po taneční muziku na plesy včetně polky a valčíku.<br> Hrajeme na vaší zábavě, plesu, svatbě, či jiné akci v okolí do 123 km od Pardubic s vlastním perfektním zvukem.</p>
+                <a href="assets/resources/repertoár_bsband.pdf" target="_blank" class="btn btn-secondary">Náš Repertoár (PDF)</a>
+            </div>
+        </section>
+
+        <section id="band" class="content-section bg-light">
+            <div class="container text-center">
+                 <h2>Složení kapely</h2>
+                 <p>Bicí (Petr "Dolfi" Adam) <span class="separator">|</span> Kytara (David Syrovec ml.) <span class="separator">|</span> Baskytara (David Syrovec) <span class="separator">|</span> Kytara, Sax, Zpěv (Mirek Bečička) <span class="separator">|</span> Klávesy, Zpěv (Adéla Lhotová)</p>
+            </div>
+        </section>
+
+        <section id="references" class="content-section">
+             <div class="container text-center">
+                <h2>Reference</h2>
+                <p>Svatby <span class="separator">|</span> Oslavy 700 let obce Brloh <span class="separator">|</span> Ples ZŠ Svítkov <span class="separator">|</span> Ples SDH Čermná <span class="separator">|</span> Sportovní ples Miletín <span class="separator">|</span> Ples spolku Dubany <span class="separator">|</span> Restaurace Rosignano <span class="separator">|</span> Hospůdka Pod Věží Doubravice a další...</p>
+            </div>
+        </section>
+
+         <section id="video" class="content-section bg-dark">
+            <div class="container text-center">
+                <h2>Video Ukázka</h2>
+                <div class="video-wrapper">
+                     <iframe src="https://www.youtube.com/embed/_o0jpleViPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                 <a href="ukazky.html" class="btn btn-primary">Další Ukázky</a>
+            </div>
+        </section>
+
+				<section id="social" class="content-section">
+					<div class="container text-center">
+							<h2>Sledujte nás</h2>
+							 <div class="social-links">
+									<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" class="social-icon facebook">Facebook</a>
+									<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener" class="social-icon instagram">Instagram</a>
+							 </div>
+
+							 <div class="facebook-wrapper">
+								<div class="fb-page" data-href="https://www.facebook.com/bonesaver?ref=embed_page" data-tabs="timeline" data-width="1200" data-height="1200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/bonesaver?ref=embed_page" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bonesaver?ref=embed_page">BS band</a></blockquote></div>
+							 </div>
+					</div>
+			 </section>
+
+    </main>
+
+    <footer class="site-footer bg-dark">
+        <div class="container footer-content">
+             <div class="footer-contact">
+                 <p>Ing. Miroslav Bečička</p>
+                 <p><a href="tel:+420734393711">+420 734 393 711</a></p>
+                 <p><a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
+                 <p>Do Polí 1054, Pardubice, 53006</p>
+             </div>
+             <div class="footer-copy">
+                 <p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
+                 <p><a href="https://facebook.com/bonesaver" target="_blank" rel="noopener">Facebook</a> | <a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener">Instagram</a></p>
+             </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

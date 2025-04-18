@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukázky - BS band</title>
+    <meta name="description" content="Poslechněte si ukázky živých vystoupení kapely BoneSaver. Rocková kapela z Pardubic.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link href="assets/images/logoBSband.jpg" rel="shortcut icon" type="image/x-icon" />
+    <link href="assets/images/logoBSband.jpg" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">BS band</span>
+                </a>
+            </div>
+             <nav class="main-nav">
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                     <svg viewBox="0 0 100 80" width="30" height="30" class="hamburger-icon">
+                        <rect width="100" height="15" rx="8"></rect>
+                        <rect y="30" width="100" height="15" rx="8"></rect>
+                        <rect y="60" width="100" height="15" rx="8"></rect>
+                    </svg>
+                     <svg viewBox="0 0 80 80" width="30" height="30" class="close-icon">
+                        <line x1="20" y1="20" x2="60" y2="60" stroke-width="10" stroke-linecap="round"/>
+                        <line x1="60" y1="20" x2="20" y2="60" stroke-width="10" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="ukazky.html" class="active">Ukázky</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+         <section class="page-title-section bg-light">
+            <div class="container">
+                 <h1>Ukázky naší tvorby</h1>
+                 <p>Poslechněte si, jak hrajeme naživo!</p>
+            </div>
+        </section>
+
+        <section id="samples" class="content-section">
+            <div class="container">
+                <div class="samples-grid">
+                    <div class="sample-item">
+                        <h3>Video Mix 1</h3>
+                         <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/_o0jpleViPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="sample-item">
+                        <h3>Video Mix 2 (Placeholder)</h3>
+                         <div class="video-wrapper placeholder">
+                            <p>Další video již brzy...</p>
+                            <!-- Replace with actual iframe when available -->
+                            <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" ...></iframe> -->
+                        </div>
+                    </div>
+
+                     <div class="sample-item">
+                        <h3>Audio Ukázka 1 (Placeholder)</h3>
+                         <div class="audio-wrapper placeholder">
+                             <p>Audio ukázka již brzy...</p>
+                             <!-- Replace with actual audio player/link when available -->
+                             <!-- <audio controls src="path/to/audio1.mp3"></audio> -->
+                         </div>
+                    </div>
+
+                     <div class="sample-item">
+                        <h3>Audio Ukázka 2 (Placeholder)</h3>
+                         <div class="audio-wrapper placeholder">
+                             <p>Audio ukázka již brzy...</p>
+                             <!-- Replace with actual audio player/link when available -->
+                             <!-- <audio controls src="path/to/audio2.mp3"></audio> -->
+                         </div>
+                    </div>
+                 </div>
+                 <div class="text-center more-samples-link">
+                    <p>Více videí a fotek najdete na našem <a href="https://facebook.com/bonesaver" target="_blank" rel="noopener">Facebooku</a> a <a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener">Instagramu</a>.</p>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer bg-dark">
+        <div class="container footer-content">
+             <div class="footer-contact">
+                 <p>Ing. Miroslav Bečička</p>
+                 <p><a href="tel:+420734393711">+420 734 393 711</a></p>
+                 <p><a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
+                 <p>Do Polí 1054, Pardubice, 53006</p>
+             </div>
+             <div class="footer-copy">
+                 <p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
+                 <p><a href="https://facebook.com/bonesaver" target="_blank" rel="noopener">Facebook</a> | <a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener">Instagram</a></p>
+             </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
