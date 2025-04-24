@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertoár - BS Band | Seznam písní</title>
+    <meta name="description" content="Prozkoumejte rozsáhlý seznam písní kapely BS Band. Hrajeme rock, pop, české hity a taneční hudbu pro svatby, plesy a večírky.">
+    <meta name="keywords" content="repertoár kapely, seznam písní, rock covery, pop covery, česká hudební skupina, písně na svatbu, hudba na ples, párty písně, BS Band playlist">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/images/logoBSband.png" rel="icon" type="image/png" />
+    <link href="assets/images/logoBSband.png" rel="shortcut icon" type="image/png" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">BS band</span>
+                </a>
+            </div>
+             <nav class="main-nav">
+                <button id="menu-toggle" class="menu-toggle" aria-label="Přepnout menu" aria-expanded="false">
+                     <svg viewBox="0 0 100 80" width="30" height="30" class="hamburger-icon">
+                        <rect width="100" height="12" rx="8"></rect>
+                        <rect y="34" width="100" height="12" rx="8"></rect>
+                        <rect y="68" width="100" height="12" rx="8"></rect>
+                    </svg>
+                     <svg viewBox="0 0 80 80" width="30" height="30" class="close-icon">
+                        <line x1="20" y1="20" x2="60" y2="60" stroke-width="10" stroke-linecap="round"/>
+                        <line x1="60" y1="20" x2="20" y2="60" stroke-width="10" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="repertoar.html" class="active">Repertoár</a></li>
+                    <li><a href="ukazky.html">Ukázky</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title-section bg-light-alt animated-section">
+            <div class="container text-center"> <!-- Added text-center -->
+                 <h1>Náš Repertoár</h1>
+                 <p>Níže naleznete výběr z našeho repertoáru. Kompletní seznam si můžete stáhnout.</p>
+                 <p>Můžete si také stáhnout kompletní seznam: <a href="assets/resources/repertoár_bsband.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Kompletní Repertoár (PDF)</a></p>
+            </div>
+        </section>
+
+        <section id="repertoire-list-section" class="content-section animated-section">
+            <div class="container">
+
+                <!-- START OF NEW REPERTOIRE LIST STRUCTURE -->
+                <div class="repertoire-list-container">
+                    <div class="repertoire-controls" style="display: none;"> <!-- Filter hidden by default, enabled by JS -->
+                        <label for="repertoire-filter">Filtrovat:</label>
+                        <input type="text" id="repertoire-filter" placeholder="Zadejte interpreta nebo název...">
+                    </div>
+
+                    <div class="repertoire-list">
+                        <div class="repertoire-item animated-item"> <span class="artist">4 Non Blondes</span> <span class="title">What`s Up</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">AC/DC</span> <span class="title">Highway to Hell</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">AC/DC</span> <span class="title">T.N.T.</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">AC/DC</span> <span class="title">You shook me all night long</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Aleš Brichta</span> <span class="title">Dívka s perlami ve vlasech</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Alkehol</span> <span class="title">Spalovač chlastu</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Aneta Langerová</span> <span class="title">Voda živá</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Arakain</span> <span class="title">Zimní královna</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Argema</span> <span class="title">Jarošovský pivovar</span> <span class="style">valčík</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Argema (Smokie)</span> <span class="title">Prohrát není žádná hanba</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Blue Effect</span> <span class="title">Sluneční hrob</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bobr a motýl</span> <span class="title">Vyznání</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Naše první kapela</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Vyhnanec času</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Já piju dál</span> <span class="style">rockNroll</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Protože chcem</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Nedostanu metál za metal</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Růže</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Mlhavá rána</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Balada o hladovém strýci</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">CampNRoll</span> <span class="style">rockNroll</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">GrowYourOwn</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Ješitnost</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Krtek</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">O svobodě</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Pomsta bábě</span> <span class="style">punkrock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Prase</span> <span class="style">reggae</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bonesaver</span> <span class="title">Stal se z něho maniak</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Brichta Aleš</span> <span class="title">Slečna závist</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Brichta Aleš</span> <span class="title">Nechte vlajky vlát</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Brutus</span> <span class="title">Dlažební kostka</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bryan Adams</span> <span class="title">Summer of 69</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Bryan Adams</span> <span class="title">Please Forgive Me</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Buty</span> <span class="title">Nad stádem koní</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Čejka band</span> <span class="title">Večerníček</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Černoch Karel</span> <span class="title">Zrcadlo</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Daniel Landa</span> <span class="title">Holky a mašiny</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Deep Purple</span> <span class="title">Smoke on The Water</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">DefLeBart</span> <span class="title">Vyletěl mozek z lebky</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Divokej Bill</span> <span class="title">Plakala</span> <span class="style">country rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Doctor PP</span> <span class="title">Whisky co má šťávu</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Eagles</span> <span class="title">Hotel California</span> <span class="style">country rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Eva Olmerová</span> <span class="title">Čekej tiše (Waltz)</span> <span class="style">Waltz</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">František Kmoch</span> <span class="title">Po starodávnu</span> <span class="style">mazurka</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Garáž/Plastic people of The Universe</span> <span class="title">Muchomůrky bílé</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">GunsNRoses</span> <span class="title">Knocking on heavens door</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Halestorm</span> <span class="title">Bad Romance</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Harlej</span> <span class="title">Svařák</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Harlej</span> <span class="title">Přirození</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Harlej</span> <span class="title">Strážní andělé</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Harlej</span> <span class="title">Pověste ho vejš</span> <span class="style">country rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Harlej</span> <span class="title">Až tady jednou nebudu</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Harlej</span> <span class="title">Proč pocit mám</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Helloween</span> <span class="title">I want out</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Honza Nedvěd</span> <span class="title">Stánky</span> <span class="style">country</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Horkýže slíže</span> <span class="title">L.A.G. Song</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Horkýže slíže</span> <span class="title">Malá Žužu</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Hudba Praha</span> <span class="title">Máma - táta</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Hudba Praha</span> <span class="title">Špinavý záda (Na Žofíně)</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Chinaski</span> <span class="title">1970</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Chinaski</span> <span class="title">Slovenský klín</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Chinaski</span> <span class="title">Punčocháče</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Chinaski</span> <span class="title">Vinárna u Valdštejna</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Ivan Hlas</span> <span class="title">Jednou mi fotr povídá</span> <span class="style">rockNroll</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Ivan Hlas</span> <span class="title">Malagelo</span> <span class="style">country rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Ivan Hlas</span> <span class="title">RockNRoll pro Beethovena</span> <span class="style">rockNroll</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Ivan Mládek</span> <span class="title">Když je v Praze hic</span> <span class="style">foxtrot</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Já jsem Aleš</span> <span class="title">Tři sestry</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Janek Ledecký</span> <span class="title">Na ptáky jsme krátký</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Jarda Hypochondr</span> <span class="title">Archivní</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Jarda Hypochondr</span> <span class="title">Šenkýřka</span> <span class="style">pop</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Jiří Schelinger</span> <span class="title">Jahody mražený</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Joan Jett</span> <span class="title">I love Rock N Roll</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">Šaman</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">Pohoda</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">Balada o špinavejch fuseklých</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">Houby magický</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">V pekle sudy válej</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">Malá dáma</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">Láďa má velkou hlavu</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kabát</span> <span class="title">Žízeň</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kapitán Demo</span> <span class="title">Zlatíčka</span> <span class="style">disco</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Karel Gott</span> <span class="title">Trezor</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Karel Hašler</span> <span class="title">Vltavo, Vltavo</span> <span class="style">waltz</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Karel Vacek</span> <span class="title">Fůra slámy</span> <span class="style">polka</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Karel Vacek</span> <span class="title">Nikdy se nevrátí pohádka mládí</span> <span class="style">tango</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Katapult</span> <span class="title">Až</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Katapult</span> <span class="title">Smutná nevěsta</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Katapult</span> <span class="title">Já nesnídám sám</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Katapult</span> <span class="title">Blues opuštěný postele</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Katapult</span> <span class="title">Někdy příště</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Katapult</span> <span class="title">Vojín XY hlásí příchod</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Keks</span> <span class="title">Víš</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Keks</span> <span class="title">Proč holky pláčou</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kiss</span> <span class="title">I was made for loving you</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Kryštof</span> <span class="title">Inzerát</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lady Gaga</span> <span class="title">Shallow</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lidová</span> <span class="title">Pivovarští koně</span> <span class="style">polka</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lidová</span> <span class="title">Sukýnka</span> <span class="style">valčík</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lidová</span> <span class="title">Za tů horů</span> <span class="style">valčík</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lidová</span> <span class="title">Na tý louce zelený</span> <span class="style">valčík</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lidová</span> <span class="title">Mysliveček (polka směs)</span> <span class="style">polka/čardáš</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lidová</span> <span class="title">Já jsem malý mysliveček</span> <span class="style">valčík</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Luboš Pospíšil</span> <span class="title">Tak Vznikla Zem</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lucie</span> <span class="title">Panic</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lucie</span> <span class="title">Sen</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lucie</span> <span class="title">Šťastnej chlap</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Lucie</span> <span class="title">Amerika</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Mandrage</span> <span class="title">Šrouby a matice</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Mandrage</span> <span class="title">Hledá se žena</span> <span class="style">pop rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Metallica</span> <span class="title">Whisky in the Jar</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Metallica</span> <span class="title">Nothing Else Matters</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Michal David</span> <span class="title">Poupata</span> <span class="style">pop</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Michal David</span> <span class="title">Nonstop</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Michal David</span> <span class="title">Každý mi tě lásko závidí</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Michal David</span> <span class="title">Pár přátel</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Michal Prokop</span> <span class="title">Blues o spolykaných slovech</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Michal Šindelář</span> <span class="title">Hořely, padaly hvězdy</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Michal Širl</span> <span class="title">Malá Baletka</span> <span class="style">valčík</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Mňága a Žďorp</span> <span class="title">I cesta může být cíl</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Mňága a Žďorp</span> <span class="title">Písnička pro tebe</span> <span class="style">country rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Moonlight shadow</span> <span class="title">Mike Oldfield</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Morčata na útěku</span> <span class="title">Hledá se děda</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Nedvědi</span> <span class="title">Kočovní herci</span> <span class="style">folk a country</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Nedvědi</span> <span class="title">Ptáčata</span> <span class="style">folk a country</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Nedvědi</span> <span class="title">Podvod</span> <span class="style">folk a country</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Nedvědi</span> <span class="title">Kohout</span> <span class="style">folk a country</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Nedvědi</span> <span class="title">Frankie Dlouhán</span> <span class="style">folk a country</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Neto</span> <span class="title">Srdce v ruce mám</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Neznámý autor</span> <span class="title">Ptačí tanec</span> <span class="style">fogl dance</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Nirvana</span> <span class="title">Smels Like Teen Spirit</span> <span class="style">punkrock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">No name</span> <span class="title">Žily</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Odyssea</span> <span class="title">Divadelní společnost JK Tyla</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Odyssea</span> <span class="title">Kamna kouří</span> <span class="style">rockNroll</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Olympic</span> <span class="title">Okno mé lásky</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Olympic</span> <span class="title">Dej mi víc své lásky</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Olympic</span> <span class="title">Želva</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Olympic (Petr Janda solo)</span> <span class="title">Stejskání</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Orlík</span> <span class="title">Bílej jezdec</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Petra Černocká</span> <span class="title">Saxana</span> <span class="style">pop</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Petra Janů, Petr Janda</span> <span class="title">Jedeme dál</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Pink</span> <span class="title">Try</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Pink Floyd</span> <span class="title">Wish You Were Here</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Plexis</span> <span class="title">Svět jsou jen báry</span> <span class="style">pop rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">pohádka (Uhlíř, Svěrák)</span> <span class="title">Statistika</span> <span class="style">pop</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">pohádka (Uhlíř, Svěrák)</span> <span class="title">Dělání</span> <span class="style">pop</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">pohádka (Uhlíř, Svěrák)</span> <span class="title">Hlupáku, najdu tě</span> <span class="style">pop</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Premier</span> <span class="title">Hrobař</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Queen</span> <span class="title">We Will Rock You</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rangers</span> <span class="title">Zvedněte kotvy</span> <span class="style">folk</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Ready Kirken</span> <span class="title">Zejtra mám</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Richard Müller</span> <span class="title">Srdce jako kníže Rohan</span> <span class="style">pop</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rybičky 48</span> <span class="title">Léto</span> <span class="style">reggae</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rybičky 48</span> <span class="title">Ženy</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rybičky 48</span> <span class="title">Američan z Poličan</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rybičky 48</span> <span class="title">Slibuju, že nebudu pít</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rybičky 48</span> <span class="title">Zamilovaný/nešťastná</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rybičky 48</span> <span class="title">My ještě nejsme starý</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Rybičky 48</span> <span class="title">Muži</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Semtex</span> <span class="title">Mašinka</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Smokie/Karel Zich</span> <span class="title">Alenka v říši divů</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Sunrise Avenue</span> <span class="title">Hollwood Hills</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Svěrák, Uhlíř</span> <span class="title">Severní vítr</span> <span class="style">waltz</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Škwor</span> <span class="title">Síla starejch vín</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Škwor</span> <span class="title">Máme tu problém</span> <span class="style">ploužák</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">The Clash</span> <span class="title">Should I stay or should I go</span> <span class="style">punkrock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">The Cure</span> <span class="title">Fiday I am in love</span> <span class="style">poprock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Tina Turner</span> <span class="title">The Best</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Traktor</span> <span class="title">Kdy dojdou náboje a vzduch</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Traktor</span> <span class="title">Letokruhy</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Tři sestry</span> <span class="title">Lidojedi</span> <span class="style">rock</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Tři sestry</span> <span class="title">Sovy v mazutu</span> <span class="style">folk</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Tři sestry</span> <span class="title">Večírek</span> <span class="style">polka</span> </div>
+                        <div class="repertoire-item animated-item"> <span class="artist">Tři sestry</span> <span class="title">Piánovka (Láďa jede autobusem)</span> <span class="style">country rock</span> </div>
+                    </div>
+                </div>
+                <!-- END OF NEW REPERTOIRE LIST STRUCTURE -->
+
+                 <p class="repertoire-note text-center">Nenašli jste svou oblíbenou píseň? Napište nám! Jsme otevřeni novým návrhům a speciálním přáním (s dostatečným předstihem).</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer bg-dark">
+        <div class="container footer-content">
+             <div class="footer-contact">
+                 <h3>Kontaktujte nás</h3>
+                 <p><i class="fas fa-user"></i> Ing. Miroslav Bečička (Manažer)</p>
+                 <p><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></p>
+                 <p><i class="fas fa-envelope"></i> <a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
+                 <p><i class="fas fa-map-marker-alt"></i> Pardubice, Česká Republika</p>
+             </div>
+             <div class="footer-copy">
+                 <p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
+                 <div class="footer-social">
+                     <a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                     <a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 </div>
+             </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
