@@ -30,9 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 		});
 		document.addEventListener('click', (event) => {
-			const isClickInsideNav = navList.contains(event.target);
+			const isClickInsideNav = navList.contains(event.target) || (event.target.closest && event.target.closest('.nav-list'));
 			const isClickOnToggle = menuToggle.contains(event.target);
-			if (!isClickInsideNav && !isClickOnToggle && navList.classList.contains('active')) {
+			const isClickOnSwitchButton = event.target.closest('#style-switch-button'); // Prevent closing when clicking switch button
+
+			if (!isClickInsideNav && !isClickOnToggle && !isClickOnSwitchButton && navList.classList.contains('active')) {
 				navList.classList.remove('active');
 				menuToggle.classList.remove('active');
 				menuToggle.setAttribute('aria-expanded', 'false');
@@ -40,6 +42,68 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		});
 	}
+
+	// --- Style Switcher ---
+	const styleSwitchButton = document.getElementById('style-switch-button');
+	const stylesheets = Array.from(document.querySelectorAll('link[rel*="stylesheet"][title]'));
+	const switchTextSpan = styleSwitchButton?.querySelector('.switch-text');
+	const PREF_KEY = 'preferred_theme_title';
+
+	const setActiveStyleSheet = (title) => {
+		stylesheets.forEach(sheet => {
+			sheet.disabled = (sheet.title !== title);
+		});
+		if (switchTextSpan) {
+			// Assuming only two styles, toggle text
+			switchTextSpan.textContent = title === 'Styl 1' ? 'Styl 2' : 'Styl 1';
+		}
+		try {
+			localStorage.setItem(PREF_KEY, title);
+		} catch (e) {
+			console.warn("Could not save theme preference to localStorage:", e);
+		}
+	};
+
+	const getActiveStyleSheet = () => {
+		const activeSheet = stylesheets.find(sheet => !sheet.disabled);
+		return activeSheet ? activeSheet.title : null;
+	};
+
+	const getNextStyleSheet = () => {
+		const currentTitle = getActiveStyleSheet();
+		const currentIndex = stylesheets.findIndex(sheet => sheet.title === currentTitle);
+		const nextIndex = (currentIndex + 1) % stylesheets.length;
+		return stylesheets[nextIndex]?.title || stylesheets[0]?.title;
+	};
+
+	// Apply stored preference on load
+	try {
+		const storedPreference = localStorage.getItem(PREF_KEY);
+		if (storedPreference && stylesheets.some(sheet => sheet.title === storedPreference)) {
+			setActiveStyleSheet(storedPreference);
+		} else {
+			// Apply the default (first enabled one)
+			const defaultActive = getActiveStyleSheet();
+			if(defaultActive) setActiveStyleSheet(defaultActive);
+		}
+	} catch (e) {
+		console.warn("Could not read theme preference from localStorage:", e);
+		const defaultActive = getActiveStyleSheet();
+		if(defaultActive) setActiveStyleSheet(defaultActive);
+	}
+
+
+	if (styleSwitchButton && stylesheets.length > 1) {
+		styleSwitchButton.addEventListener('click', () => {
+			const nextTitle = getNextStyleSheet();
+			if (nextTitle) {
+				setActiveStyleSheet(nextTitle);
+			}
+		});
+	} else if (styleSwitchButton) {
+		styleSwitchButton.style.display = 'none'; // Hide button if only one style
+	}
+
 
 	// --- Smooth Scroll for Internal Links ---
 	const scrollLinks = document.querySelectorAll('.scroll-link');
@@ -501,9 +565,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		if (loadingIndicator) loadingIndicator.style.display = 'block';
 
 		const nextChunk = currentFilteredData.slice(currentOffset, currentOffset + ITEMS_PER_PAGE);
-		renderTableRows(nextChunk, true);
-		isLoading = false;
-		if (loadingIndicator) loadingIndicator.style.display = 'none';
+		// Simulate network delay for testing
+		// setTimeout(() => {
+			renderTableRows(nextChunk, true);
+			isLoading = false;
+			if (loadingIndicator) loadingIndicator.style.display = 'none';
+		// }, 500);
 	}
 
 	function handleFilter() {
@@ -517,32 +584,42 @@ document.addEventListener('DOMContentLoaded', function() {
 			)
 			: [...repertoireData];
 
-		isLoading = false;
-		removeNoResultsMessage();
+		isLoading = false; // Reset loading state
+		removeNoResultsMessage(); // Clear any previous no results message
+
+		// Check if observer exists and unobserve before potential re-observation
+		if (observer && sentinel) {
+			observer.unobserve(sentinel);
+		}
 
 		if (currentFilteredData.length === 0) {
 			addNoResultsMessage();
-			if (observer && sentinel) observer.unobserve(sentinel);
+			// No need to observe sentinel if no results
 		} else {
 			const initialChunk = currentFilteredData.slice(0, ITEMS_PER_PAGE);
-			renderTableRows(initialChunk, false);
+			renderTableRows(initialChunk, false); // Render initial results, clearing previous ones
 			if (observer && sentinel && currentFilteredData.length > ITEMS_PER_PAGE) {
+				// Only observe if there are more items than initially displayed
 				observer.observe(sentinel);
-			} else if (observer && sentinel) {
-				observer.unobserve(sentinel);
 			}
 		}
 	}
 
+
 	// --- Initialization ---
 	if (filterInput && tableBody && sentinel) {
+		// Remove initial loading row before rendering
+		if (initialLoadingRow && tableBody.contains(initialLoadingRow)) {
+			tableBody.removeChild(initialLoadingRow);
+		}
+
 		const initialChunk = currentFilteredData.slice(0, ITEMS_PER_PAGE);
-		renderTableRows(initialChunk, false);
+		renderTableRows(initialChunk, false); // Render the first batch
 
 		const observerOptions = {
 			root: null,
 			rootMargin: '0px',
-			threshold: 0.1
+			threshold: 0.1 // Load when sentinel is 10% visible
 		};
 
 		observer = new IntersectionObserver((entries) => {
@@ -552,7 +629,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}, observerOptions);
 
 		if (currentFilteredData.length > ITEMS_PER_PAGE) {
-			observer.observe(sentinel);
+			observer.observe(sentinel); // Start observing if more items exist
 		}
 
 		filterInput.addEventListener('input', debounce(handleFilter, 350));
@@ -560,9 +637,14 @@ document.addEventListener('DOMContentLoaded', function() {
 	} else {
 		console.error("Required elements for repertoire table/lazy loading not found.");
 		if (tableBody) {
+			// Ensure initial loading row is removed even on error
+			if (initialLoadingRow && tableBody.contains(initialLoadingRow)) {
+				tableBody.removeChild(initialLoadingRow);
+			}
 			tableBody.innerHTML = `<tr><td colspan="3" style="color: red; text-align: center; padding: 2rem;">Chyba: Nepodařilo se inicializovat tabulku repertoáru.</td></tr>`;
 		}
 	}
+
 
 	// --- Scroll Animations (for other sections) ---
 	const animatedSections = document.querySelectorAll('.animated-section');
@@ -570,10 +652,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
 		const scrollObserver = new IntersectionObserver((entries, obs) => {
 			entries.forEach(entry => {
+				// Prevent animation on repertoire table section itself, as it has row animations
 				if (entry.target.id === 'repertoire-table-section') return;
+
 				if (entry.isIntersecting) {
 					entry.target.classList.add('is-visible');
 				}
+				// Optional: unobserve after visible to save resources
+				// else {
+				//  entry.target.classList.remove('is-visible');
+				// }
+				// if (entry.isIntersecting) {
+				//  entry.target.classList.add('is-visible');
+				//  obs.unobserve(entry.target);
+				// }
 			});
 		}, observerOptions);
 		animatedSections.forEach(section => scrollObserver.observe(section));
