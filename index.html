@@ -1,11 +1,15 @@
+--- START OF FILE index.html ---
 <!DOCTYPE html>
 <html lang="cs">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BS band - Energická Rocková Kapela z Pardubic</title>
-	<meta name="description" content="BS Band - Živá rocková kapela z Pardubic pro vaši svatbu, ples, firemní akci či oslavu. Hrajeme rockové pecky, pop i taneční hity napříč generacemi. 100% live!">
-	<meta name="keywords" content="kapela, kapela na svatbu, živá hudba Pardubice, rocková kapela, plesová kapela, firemní akce, oslavy, Východní Čechy, Pardubice, Hradec Králové, BS Band, cover band, hudba na akci">
+	<!-- SEO Optimized Title -->
+	<title>BS Band: Živá Kapela Pardubice | Hudba na Svatby, Plesy, Zábavy (Východní Čechy)</title>
+	<!-- SEO Optimized Description -->
+	<meta name="description" content="Hledáte energickou živou kapelu v Pardubicích nebo Hradci Králové? BS Band - rock & pop cover band pro vaši svatbu, ples, firemní akci, zábavu či oslavu ve Východních Čechách. 100% live hudba!">
+	<!-- Added Keywords Meta (Optional but doesn't hurt) -->
+	<meta name="keywords" content="kapela pardubice, kapela na svatbu, kapela na ples, hudba na zábavu, živá hudba, bs band, cover band, hudební skupina, východní čechy, hradec králové, pardubicko, rock, pop">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +22,63 @@
 
 	<link href="assets/images/logoBSband.jpg" rel="icon" type="image/jpg" />
 	<link href="assets/images/logoBSband.jpg" rel="shortcut icon" type="image/jpg" />
+
+	<!-- Added Schema.org JSON-LD for MusicGroup -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "MusicGroup",
+	  "name": "BS Band",
+	  "alternateName": "BSband",
+	  "description": "Energická živá kapela z Pardubic (rock & pop cover band) hrající na svatbách, plesech, firemních akcích, zábavách a oslavách ve Východních Čechách.",
+	  "genre": ["Rock", "Pop", "Cover Band", "Taneční hudba", "Hudba na ples", "Hudba na zábavu"],
+	  "location": {
+	    "@type": "Place",
+	    "address": {
+	      "@type": "PostalAddress",
+	      "addressLocality": "Pardubice",
+	      "addressRegion": "Pardubický kraj",
+	      "addressCountry": "CZ"
+	    }
+	  },
+	  "areaServed": [
+	    {
+	      "@type": "AdministrativeArea",
+	      "name": "Východní Čechy"
+	    },
+	    {
+	      "@type": "City",
+	      "name": "Pardubice"
+	    },
+	    {
+	      "@type": "City",
+	      "name": "Hradec Králové"
+	    },
+		{
+		  "@type": "AdministrativeArea",
+		  "name": "Pardubický kraj"
+		},
+		{
+		  "@type": "AdministrativeArea",
+		  "name": "Královéhradecký kraj"
+		}
+	  ],
+	  "url": "https://www.your-bsband-website.cz/",
+	  "sameAs": [
+	    "https://facebook.com/bonesaver",
+	    "https://www.instagram.com/bonesaver.cz"
+	    /* Add YouTube channel link if available */
+	  ],
+	  "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+420-734-393-711",
+        "email": "bonesavermusic@gmail.com",
+        "contactType": "Booking Agent / Manager",
+        "name": "Ing. Miroslav Bečička",
+		"areaServed": ["CZ"] /* Indicates contact is for Czech Republic */
+      }
+	}
+	</script>
 
 </head>
 <body>
@@ -59,9 +120,11 @@
 		<section id="hero" class="animated-section">
 			<div class="hero-overlay"></div>
 			<div class="container hero-content">
+				<!-- H1 is good, subtitle provides context -->
 				<h1>Energická živá hudba pro vaši akci</h1>
-				<p class="subtitle">Svatby | Plesy | Firemní večírky | Oslavy | Festivaly</p>
-				<p class="hero-description">Jsme BS band z Pardubic a přinášíme 100% živou smršť rockových, popových a tanečních hitů, které rozproudí každou generaci. Hrajeme pecky od kapel jako:</p>
+				<p class="subtitle">Svatby | Plesy | Firemní večírky | Oslavy | Zábavy</p>
+				<!-- SEO Optimized text -->
+				<p class="hero-description">Jsme <strong>BS band</strong>, živá <strong>kapela z Pardubic</strong>, a přinášíme 100% live smršť rockových, popových a tanečních <strong>cover</strong> hitů, které rozproudí každou generaci. Jsme ideální <strong>hudba na zábavu</strong>, svatbu nebo <strong>ples</strong> v <strong>Pardubicích</strong>, <strong>Hradci Králové</strong> a celých <strong>Východních Čechách</strong>. Hrajeme pecky od kapel jako:</p>
 				<p class="bands-list">Kabát, Harlej, Tři sestry, A. Brichta, Rybičky 48, AC/DC, Olympic, Horkýže Slíže, Škwor, Lucie, Chinaski, Kryštof, Katapult, Žlutý pes a mnoho dalších...</p>
 				<a href="#about" class="btn btn-primary scroll-link"><i class="fas fa-guitar"></i> Více o nás</a>
 				<a href="kontakt.html" class="btn btn-secondary"><i class="fas fa-calendar-check"></i> Poptat termín</a>
@@ -70,17 +133,19 @@
 
 		<section id="about" class="content-section animated-section bg-dark">
 			<div class="container text-center">
-				<h2>Kdo jsme? BS band!</h2>
-				<p class="lead">Parta muzikantů z Pardubic, která miluje energii živého hraní. Specializujeme se na cover verze známých rockových a popových hitů, ale nebojíme se ani tanečních kol včetně polky a valčíku na plesy.</p>
-				<p>Naše vystoupení je vždy 100% naživo, plné energie a s profesionálním zvukem. Rádi zahrajeme na vaší svatbě, plese, firemní akci, narozeninové oslavě nebo veřejné zábavě v Pardubicích a širokém okolí Východních Čech.</p>
+				<h2>Kdo jsme? BS band - Vaše kapela z Pardubic!</h2>
+				<!-- SEO Optimized text -->
+				<p class="lead">Jsme parta muzikantů z <strong>Pardubic</strong>, která miluje energii živého hraní. Jako zkušená <strong>hudební skupina</strong> a <strong>cover band</strong> se specializujeme na známé rockové a popové hity. Zahrajeme vám skvělou <strong>hudbu na zábavu</strong>, ale nebojíme se ani tanečních kol včetně polky a valčíku – jsme perfektní <strong>kapela na ples</strong>.</p>
+				<p>Naše vystoupení je vždy 100% naživo, plné energie a s profesionálním zvukem. Rádi zahrajeme jako vaše <strong>kapela na svatbu</strong>, <strong>ples</strong>, firemní akci, narozeninovou oslavu nebo veřejnou <strong>zábavu</strong> v <strong>Pardubicích</strong>, <strong>Hradci Králové</strong> a širokém okolí <strong>Východních Čech</strong>.</p>
 				<a href="repertoar.html" class="btn btn-primary"><i class="fas fa-list-music"></i> Prohlédnout repertoár</a>
 			</div>
 		</section>
 
 		<section id="band" class="content-section bg-dark-alt animated-section">
 			<div class="container text-center">
-				<h2>Poznejte kapelu</h2>
+				<h2>Poznejte naši hudební skupinu</h2>
 				<div class="band-members">
+					<!-- Member names are okay, roles provide context -->
 					<div class="member animated-item">Petr "Dolfi" Adam <span class="role">Bicí</span></div>
 					<div class="member animated-item">David Syrovec ml. <span class="role">Kytara</span></div>
 					<div class="member animated-item">David Syrovec <span class="role">Baskytara</span></div>
@@ -92,40 +157,44 @@
 
 		<section id="references" class="content-section animated-section bg-dark">
 			<div class="container text-center">
-				<h2>Kde jsme hráli? (Reference)</h2>
+				<h2>Kde jsme hráli? (Reference kapely)</h2>
+				<!-- SEO Optimized text -->
+				<p>Jako <strong>kapela z Východních Čech</strong> jsme hráli na mnoha akcích:</p>
 				<p class="reference-list">
-					<span class="ref-item">Svatby (různé lokace)</span> |
+					<span class="ref-item">Svatby (různé lokace vč. <strong>Pardubice</strong>, <strong>Hradec Králové</strong>)</span> |
 					<span class="ref-item">Oslavy 700 let obce Brloh</span> |
-					<span class="ref-item">Ples ZŠ Svítkov</span> |
-					<span class="ref-item">Ples SDH Čermná</span> |
-					<span class="ref-item">Sportovní ples Miletín</span> |
-					<span class="ref-item">Ples spolku Dubany</span> |
+					<span class="ref-item"><strong>Ples</strong> ZŠ Svítkov (Pardubice)</span> |
+					<span class="ref-item"><strong>Ples</strong> SDH Čermná</span> |
+					<span class="ref-item">Sportovní <strong>ples</strong> Miletín</span> |
+					<span class="ref-item"><strong>Ples</strong> spolku Dubany</span> |
 					<span class="ref-item">Restaurace Rosignano</span> |
 					<span class="ref-item">Hospůdka Pod Věží Doubravice</span>
-					<span class="ref-item">...a mnoho dalších akcí!</span>
+					<span class="ref-item">...a mnoho dalších <strong>zábav</strong> a oslav!</span>
 				</p>
-				<p>Chcete vidět více? Sledujte nás na sociálních sítích!</p>
+				<p>Chcete vidět více? Sledujte naši <strong>kapelu</strong> na sociálních sítích!</p>
 			</div>
 		</section>
 
 		<section id="video" class="content-section bg-dark animated-section">
 			<div class="container text-center">
-				<h2>Podívejte se na nás v akci!</h2>
+				<h2>Podívejte se na naši kapelu v akci!</h2>
 				<div class="video-wrapper">
-					<iframe src="https://www.youtube.com/embed/_o0jpleViPc?rel=0" title="BS Band Live Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+					<!-- Added title to iframe for accessibility/SEO -->
+					<iframe src="https://www.youtube.com/embed/_o0jpleViPc?rel=0" title="BS Band Live Mix - Živá kapela Pardubice (cover band)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
 				</div>
-				<a href="ukazky.html" class="btn btn-primary"><i class="fas fa-play-circle"></i> Další ukázky</a>
+				<a href="ukazky.html" class="btn btn-primary"><i class="fas fa-play-circle"></i> Další ukázky hudby</a>
 			</div>
 		</section>
 
 		<section id="social" class="content-section bg-light animated-section">
 			<div class="container text-center">
-				<h2>Sledujte nás online</h2>
+				<h2>Sledujte BS Band online</h2>
 				<div class="social-links">
 					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
 					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
 				</div>
-				<p>Na našich profilech najdete aktuální fotky, videa a informace o plánovaných akcích.</p>
+				<!-- SEO Optimized text -->
+				<p>Na našich profilech najdete aktuální fotky, videa a informace o plánovaných akcích naší <strong>kapely</strong> v <strong>Pardubicích</strong> a okolí.</p>
 			</div>
 		</section>
 
@@ -134,11 +203,12 @@
 	<footer class="site-footer">
 		<div class="container footer-content">
 			<div class="footer-contact">
-				<h3>Kontaktujte nás</h3>
+				<h3>Kontaktujte nás (Kapela Pardubice)</h3>
 				<p><i class="fas fa-user"></i> Ing. Miroslav Bečička (Manažer)</p>
 				<p><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></p>
 				<p><i class="fas fa-envelope"></i> <a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
-				<p><i class="fas fa-map-marker-alt"></i> Pardubice, Česká Republika</p>
+				<!-- Added region context -->
+				<p><i class="fas fa-map-marker-alt"></i> <strong>Kapela Pardubice</strong>, hrajeme celé <strong>Východní Čechy</strong></p>
 			</div>
 			<div class="footer-copy">
 				<p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
@@ -153,3 +223,4 @@
 	<script src="script.js"></script>
 </body>
 </html>
+--- END OF FILE index.html ---

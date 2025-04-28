@@ -1,11 +1,15 @@
+--- START OF FILE repertoar.html ---
 <!DOCTYPE html>
 <html lang="cs">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Repertoár - BS Band | Seznam písní</title>
-	<meta name="description" content="Prozkoumejte rozsáhlý seznam písní kapely BS Band. Hrajeme rock, pop, české hity a taneční hudbu pro svatby, plesy a večírky.">
-	<meta name="keywords" content="repertoár kapely, seznam písní, rock covery, pop covery, česká hudební skupina, písně na svatbu, hudba na ples, párty písně, BS Band playlist">
+	<!-- SEO Optimized Title -->
+	<title>Repertoár BS Band (Pardubice): Seznam písní (Rock, Pop, Cover) | Hudba na ples i zábavu</title>
+	<!-- SEO Optimized Description -->
+	<meta name="description" content="Prohlédněte si repertoár BS Bandu z Pardubic. Hrajeme rock, pop, české i zahraniční covery. Ideální hudba na ples, svatbu, zábavu i firemní večírek ve Východních Čechách.">
+	<!-- Added Keywords Meta (Optional) -->
+	<meta name="keywords" content="repertoár kapely, seznam písní, bs band, kapela pardubice, cover band, rock, pop, hudba na ples, hudba na svatbu, hudba na zábavu, východní čechy">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,8 +60,9 @@
 	<main>
 		<section class="page-title-section bg-light-alt animated-section is-visible">
 			<div class="container text-center">
-				<h1>Náš Repertoár</h1>
-				<p>Níže naleznete výběr z našeho repertoáru. Seznam můžete filtrovat podle interpreta nebo názvu písně.</p>
+				<h1>Náš Repertoár (Kapela BS Band)</h1>
+				<!-- SEO Optimized text -->
+				<p>Níže naleznete výběr z repertoáru naší <strong>pardubické kapely</strong> BS Band. Seznam můžete filtrovat podle interpreta nebo názvu písně. Hrajeme osvědčené <strong>covery</strong> pro každou příležitost – ať už hledáte <strong>kapelu na ples</strong>, <strong>hudbu na zábavu</strong> nebo na svatbu.</p>
 				<p>Můžete si také stáhnout kompletní seznam: <a href="assets/resources/repertoár_bsband.pdf" target="_blank" class="pdf-link"><i class="fas fa-file-pdf"></i> Kompletní Repertoár (PDF)</a></p>
 			</div>
 		</section>
@@ -66,25 +71,26 @@
 			<div class="container">
 
 				<div class="repertoire-controls">
-					<label for="repertoire-filter">Filtrovat:</label>
+					<label for="repertoire-filter">Filtrovat repertoár:</label>
 					<input type="text" id="repertoire-filter" placeholder="Zadejte interpreta nebo název...">
 				</div>
 
 				<div class="table-responsive-wrapper">
-					<table class="repertoire-table">
+					<table class="repertoire-table" aria-label="Seznam písní kapely BS Band">
 						<thead>
 							<tr>
 								<th>Interpret</th>
-								<th>Název písně</th>
+								<th>Název písně (Cover)</th>
 								<th>Styl</th>
 							</tr>
 						</thead>
 						<tbody id="repertoire-tbody">
 							<tr id="initial-loading-row">
 								<td colspan="3" class="loading-cell">
-									<i class="fas fa-spinner fa-spin"></i> Načítání repertoáru...
+									<i class="fas fa-spinner fa-spin"></i> Načítání repertoáru kapely...
 								</td>
 							</tr>
+							<!-- Rows will be dynamically added here by script.js -->
 						</tbody>
 					</table>
 				</div>
@@ -96,7 +102,8 @@
 					<p style="margin-top: 0.5rem; color: var(--grey-text-dark);">Načítání dalších písní...</p>
 				</div>
 
-				<p class="repertoire-note text-center">Nenašli jste svou oblíbenou píseň? Napište nám! Jsme otevřeni novým návrhům a speciálním přáním (s dostatečným předstihem).</p>
+				<!-- SEO Optimized text -->
+				<p class="repertoire-note text-center">Nenašli jste svou oblíbenou píseň? Napište nám! Jako flexibilní <strong>cover band z Pardubic</strong> jsme otevřeni novým návrhům a speciálním přáním (s dostatečným předstihem).</p>
 			</div>
 		</section>
 
@@ -105,11 +112,11 @@
 	<footer class="site-footer">
 		<div class="container footer-content">
 			<div class="footer-contact">
-				<h3>Kontaktujte nás</h3>
+				<h3>Kontaktujte nás (Kapela Pardubice)</h3>
 				<p><i class="fas fa-user"></i> Ing. Miroslav Bečička (Manažer)</p>
 				<p><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></p>
 				<p><i class="fas fa-envelope"></i> <a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
-				<p><i class="fas fa-map-marker-alt"></i> Pardubice, Česká Republika</p>
+				<p><i class="fas fa-map-marker-alt"></i> <strong>Kapela Pardubice</strong>, hrajeme celé <strong>Východní Čechy</strong></p>
 			</div>
 			<div class="footer-copy">
 				<p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
@@ -124,3 +131,4 @@
 	<script src="script.js"></script>
 </body>
 </html>
+--- END OF FILE repertoar.html ---
