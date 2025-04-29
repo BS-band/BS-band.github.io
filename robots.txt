@@ -1,0 +1,8 @@
+# robots.txt for BS Band website
+
+User-agent: *
+# Allow all crawlers access to all content
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://bsband.cz/sitemap.xml
