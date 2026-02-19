@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cs">
 
 <head>
@@ -247,7 +247,10 @@
 		<div class="container footer-grid">
 			<div class="footer-form">
 				<h3>Napište nám</h3>
-				<form action="#" method="POST" class="contact-form">
+				<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+					<input type="hidden" name="access_key" value="e84a3a8c-ba7b-47af-a45e-bd69ce87b8a1">
+					<input type="hidden" name="subject" value="Nová poptávka - BS Band">
+					<input type="hidden" name="from_name" value="BS Band web">
 					<div class="form-group">
 						<input type="text" name="name" placeholder="Vaše jméno" required aria-label="Jméno">
 					</div>
@@ -270,27 +273,6 @@
 					</div>
 					<button type="submit" class="btn btn-primary">Odeslat</button>
 				</form>
-			</div>
-			<div class="footer-contact">
-				<h3>Kontakt</h3>
-				<p><i class="fas fa-user"></i> Ing. Miroslav Bečička</p>
-				<p><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></p>
-				<p><i class="fas fa-envelope"></i> <a
-						href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
-				<p><i class="fas fa-map-marker-alt"></i> Pardubice & Východní Čechy</p>
-				<div class="footer-social">
-					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" aria-label="Facebook"><i
-							class="fab fa-facebook-f"></i></a>
-					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener"
-						aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="container footer-bottom">
-			<p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
-		</div>
-	</footer>
-
 	<script src="script.js"></script>
 </body>
 

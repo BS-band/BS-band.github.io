@@ -580,53 +580,66 @@ document.addEventListener('DOMContentLoaded', function () {
 		animatedSections.forEach(section => scrollObserver.observe(section));
 	}
 
-	// Contact Form Submission Handler
+	// Contact Form Submission Handler (Web3Forms)
 	const contactForms = document.querySelectorAll('.contact-form');
 	contactForms.forEach(form => {
-		form.addEventListener('submit', function (e) {
+		form.addEventListener('submit', async function(e) {
 			e.preventDefault();
 			const submitBtn = form.querySelector('button[type="submit"]');
 			const originalBtnText = submitBtn.textContent;
 
-			// Simulate sending
+			// Show loading state
 			submitBtn.disabled = true;
-			submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Odesílám...';
+			submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> OdesĂ­lĂˇm...';
 
-			setTimeout(() => {
-				// Show success message
-				const successMessage = document.createElement('div');
-				successMessage.className = 'form-success-message';
-				successMessage.innerHTML = `
-					<div class="success-content">
-						<i class="fas fa-check-circle"></i>
-						<p>Děkujeme! Vaše poptávka byla úspěšně odeslána. Brzy se vám ozveme.</p>
-					</div>
-				`;
+			try {
+				const formData = new FormData(form);
+				const response = await fetch('https://api.web3forms.com/submit', {
+					method: 'POST',
+					body: formData
+				});
+				const data = await response.json();
 
-				// Hide form and show message
-				form.style.display = 'none';
-				form.parentNode.insertBefore(successMessage, form.nextSibling);
+				if (data.success) {
+					const successMessage = document.createElement('div');
+					successMessage.className = 'form-success-message';
+					successMessage.innerHTML = `
+						<div class="success-content">
+							<i class="fas fa-check-circle"></i>
+							<p>DÄ›kujeme! VaĹˇe poptĂˇvka byla ĂşspÄ›ĹˇnÄ› odeslĂˇna. Brzy se vĂˇm ozveme.</p>
+						</div>
+					`;
+					form.style.display = 'none';
+					form.parentNode.insertBefore(successMessage, form.nextSibling);
+					form.reset();
 
-				// Reset form for next time
-				form.reset();
-				submitBtn.disabled = false;
-				submitBtn.textContent = originalBtnText;
-
-				// Remove success message and show form again after some time
-				setTimeout(() => {
-					successMessage.style.opacity = '0';
-					successMessage.style.transition = 'opacity 0.5s ease';
 					setTimeout(() => {
-						successMessage.remove();
-						form.style.display = 'block';
-						form.style.opacity = '0';
+						successMessage.style.opacity = '0';
+						successMessage.style.transition = 'opacity 0.5s ease';
 						setTimeout(() => {
-							form.style.transition = 'opacity 0.5s ease';
-							form.style.opacity = '1';
-						}, 50);
-					}, 500);
-				}, 5000);
-			}, 1500);
+							successMessage.remove();
+							form.style.display = 'block';
+							form.style.opacity = '0';
+							setTimeout(() => {
+								form.style.transition = 'opacity 0.5s ease';
+								form.style.opacity = '1';
+							}, 50);
+						}, 500);
+					}, 5000);
+				} else {
+					throw new Error(data.message || 'Chyba pĹ™i odesĂ­lĂˇnĂ­.');
+				}
+			} catch (error) {
+				submitBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Chyba â€“ zkuste znovu';
+				setTimeout(() => {
+					submitBtn.innerHTML = originalBtnText;
+					submitBtn.disabled = false;
+				}, 3000);
+				return;
+			}
+
+			submitBtn.disabled = false;
+			submitBtn.textContent = originalBtnText;
 		});
 	});
 
