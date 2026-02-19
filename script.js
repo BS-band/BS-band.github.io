@@ -583,14 +583,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Contact Form Submission Handler (Web3Forms)
 	const contactForms = document.querySelectorAll('.contact-form');
 	contactForms.forEach(form => {
-		form.addEventListener('submit', async function(e) {
+		form.addEventListener('submit', async function (e) {
 			e.preventDefault();
 			const submitBtn = form.querySelector('button[type="submit"]');
 			const originalBtnText = submitBtn.textContent;
 
 			// Show loading state
 			submitBtn.disabled = true;
-			submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> OdesĂ­lĂˇm...';
+			submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Odesílám...';
 
 			try {
 				const formData = new FormData(form);
@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					successMessage.innerHTML = `
 						<div class="success-content">
 							<i class="fas fa-check-circle"></i>
-							<p>DÄ›kujeme! VaĹˇe poptĂˇvka byla ĂşspÄ›ĹˇnÄ› odeslĂˇna. Brzy se vĂˇm ozveme.</p>
+							<p>Děkujeme! Vaše poptávka byla úspěšně odeslána. Brzy se vám ozveme.</p>
 						</div>
 					`;
 					form.style.display = 'none';
@@ -627,10 +627,10 @@ document.addEventListener('DOMContentLoaded', function () {
 						}, 500);
 					}, 5000);
 				} else {
-					throw new Error(data.message || 'Chyba pĹ™i odesĂ­lĂˇnĂ­.');
+					throw new Error(data.message || 'Chyba při odesílání.');
 				}
 			} catch (error) {
-				submitBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Chyba â€“ zkuste znovu';
+				submitBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Chyba – zkuste znovu';
 				setTimeout(() => {
 					submitBtn.innerHTML = originalBtnText;
 					submitBtn.disabled = false;
