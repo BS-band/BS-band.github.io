@@ -83,7 +83,8 @@
 							href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
 					<p><i class="fas fa-map-marker-alt icon-left"></i><strong>Působíme v:</strong>
 						<strong>Pardubice</strong>, <strong>Hradec Králové</strong>, celé <strong>Východní
-							Čechy</strong></p>
+							Čechy</strong>
+					</p>
 					<hr>
 					<p><strong>Sledujte naši kapelu:</strong></p>
 					<div class="social-links-contact">
@@ -102,7 +103,8 @@
 					<ul>
 						<li>Datum akce</li>
 						<li>Místo konání (např. <strong>Pardubice</strong>, <strong>Hradec Králové</strong>, obec v
-							<strong>Východních Čechách</strong>)</li>
+							<strong>Východních Čechách</strong>)
+						</li>
 						<li>Typ akce (svatba, ples, oslava, firemní večírek, zábava...)</li>
 						<li>Předpokládaný čas začátku a konce hraní</li>
 					</ul>
@@ -122,7 +124,10 @@
 		<div class="container footer-grid">
 			<div class="footer-form">
 				<h3>Napište nám</h3>
-				<form action="#" method="POST" class="contact-form">
+				<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+					<input type="hidden" name="access_key" value="e84a3a8c-ba7b-47af-a45e-bd69ce87b8a1">
+					<input type="hidden" name="subject" value="Nová poptávka - BS Band">
+					<input type="hidden" name="from_name" value="BS Band web">
 					<div class="form-group">
 						<input type="text" name="name" placeholder="Vaše jméno" required aria-label="Jméno">
 					</div>
@@ -144,6 +149,27 @@
 							aria-label="Zpráva"></textarea>
 					</div>
 					<button type="submit" class="btn btn-primary">Odeslat</button>
+				</form>
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Vaše jméno" required aria-label="Jméno">
+				</div>
+				<div class="form-group">
+					<input type="email" name="email" placeholder="Váš email" required aria-label="Email">
+				</div>
+				<div class="form-group">
+					<select name="event-type" aria-label="Typ akce">
+						<option value="" disabled selected>Typ akce</option>
+						<option value="svatba">Svatba</option>
+						<option value="ples">Ples</option>
+						<option value="oslava">Oslava</option>
+						<option value="firemni">Firemní večírek</option>
+						<option value="jine">Jiné</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<textarea name="message" placeholder="Vaše zpráva" rows="4" required aria-label="Zpráva"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Odeslat</button>
 				</form>
 			</div>
 			<div class="footer-info">
