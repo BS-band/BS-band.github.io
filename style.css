@@ -1116,13 +1116,15 @@ a:hover {
 	background: var(--bg-card);
 	border: 1px solid var(--border-glass);
 	border-radius: var(--border-radius-lg);
-	padding: clamp(2rem, 5vw, 4rem);
+	padding: clamp(1.75rem, 5vw, 4rem);
 	max-width: 860px;
+	width: 100%;
 	margin: 0 auto;
 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 	backdrop-filter: blur(20px);
 	position: relative;
 	overflow: hidden;
+	box-sizing: border-box;
 }
 
 .booking-card::before {
@@ -1141,18 +1143,22 @@ a:hover {
 	flex-direction: column;
 	gap: 1.25rem;
 	margin-top: 2rem;
+	width: 100%;
 }
 
 .form-row {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1.25rem;
+	width: 100%;
 }
 
 .form-group {
 	display: flex;
 	flex-direction: column;
 	gap: 0.4rem;
+	min-width: 0;
+	width: 100%;
 }
 
 .form-group label {
@@ -1163,6 +1169,8 @@ a:hover {
 
 .form-control {
 	width: 100%;
+	max-width: 100%;
+	min-width: 0;
 	padding: 0.95rem 1.25rem;
 	background: rgba(7, 9, 14, 0.85);
 	border: 1px solid var(--border-glass);
@@ -1171,6 +1179,7 @@ a:hover {
 	font-family: inherit;
 	font-size: 0.95rem;
 	transition: var(--transition-fast);
+	box-sizing: border-box;
 }
 
 .form-control:focus {
@@ -1183,6 +1192,13 @@ a:hover {
 .form-control option {
 	background: #07090e;
 	color: #fff;
+}
+
+input[type="date"].form-control {
+	min-width: 0;
+	width: 100%;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 textarea.form-control {
@@ -1339,12 +1355,20 @@ textarea.form-control {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	box-sizing: border-box;
+	max-width: 100%;
 }
 
 .contact-item {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	min-width: 0;
+}
+
+.contact-item > div:last-child {
+	min-width: 0;
+	flex: 1;
 }
 
 .contact-icon {
@@ -1373,11 +1397,19 @@ textarea.form-control {
 	font-size: 1.05rem;
 	font-weight: 700;
 	color: var(--text-white);
+	word-break: break-word;
+	overflow-wrap: anywhere;
+}
+
+.contact-value a {
+	word-break: break-all;
+	overflow-wrap: anywhere;
 }
 
 .social-pill-list {
 	display: flex;
-	gap: 0.8rem;
+	flex-wrap: wrap;
+	gap: 0.6rem;
 	margin-top: 0.5rem;
 }
 
@@ -1385,12 +1417,19 @@ textarea.form-control {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.5rem;
-	padding: 0.6rem 1.2rem;
+	padding: 0.6rem 1.1rem;
 	border-radius: 50px;
 	font-size: 0.85rem;
 	font-weight: 700;
 	color: #fff !important;
 	border: 1px solid transparent;
+	white-space: nowrap;
+	transition: var(--transition-fast);
+}
+
+.social-pill:hover {
+	transform: translateY(-2px);
+	filter: brightness(1.15);
 }
 
 .social-pill.facebook {
@@ -1403,6 +1442,25 @@ textarea.form-control {
 
 .social-pill.youtube {
 	background: #ff0000;
+}
+
+.contact-card-actions {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: auto;
+	padding-top: 1.5rem;
+}
+
+.contact-card-actions .btn {
+	flex: 1;
+	min-width: 140px;
+}
+
+.btn-submit {
+	width: 100%;
+	padding: 1.1rem;
+	font-size: 1.05rem;
 }
 
 /* ==========================================================================
@@ -1655,6 +1713,87 @@ textarea.form-control {
 	.footer-grid {
 		grid-template-columns: 1fr;
 		gap: 2.5rem;
+	}
+
+	.contact-grid {
+		gap: 1.5rem;
+	}
+
+	.contact-card,
+	.booking-card {
+		padding: 1.5rem 1.1rem;
+		border-radius: var(--border-radius);
+	}
+
+	.form-row {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.contact-card-actions {
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.contact-card-actions .btn {
+		width: 100%;
+		flex: none;
+	}
+
+	.social-pill {
+		padding: 0.5rem 0.85rem;
+		font-size: 0.8rem;
+	}
+
+	.form-direct-phone {
+		flex-direction: column;
+		gap: 0.85rem;
+		text-align: center;
+	}
+
+	.form-direct-phone span {
+		word-break: break-word;
+	}
+
+	.btn-submit {
+		padding: 1rem;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		width: 95%;
+		padding: 0 0.5rem;
+	}
+
+	.contact-card,
+	.booking-card {
+		padding: 1.25rem 0.85rem;
+	}
+
+	.form-control {
+		padding: 0.85rem 0.95rem;
+		font-size: 0.9rem;
+	}
+
+	.contact-item {
+		gap: 0.75rem;
+	}
+
+	.contact-icon {
+		width: 38px;
+		height: 38px;
+		font-size: 1rem;
+	}
+
+	.contact-value {
+		font-size: 0.95rem;
+	}
+
+	.social-pill {
+		padding: 0.45rem 0.75rem;
+		font-size: 0.75rem;
 	}
 }
 
