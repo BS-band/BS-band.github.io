@@ -1657,3 +1657,32 @@ textarea.form-control {
 		gap: 2.5rem;
 	}
 }
+
+@media (max-width: 380px) {
+	.logo-sub {
+		display: none;
+	}
+
+	.logo-text {
+		font-size: 1.1rem;
+	}
+
+	.logo-badge {
+		height: 40px;
+		padding: 2px 4px;
+	}
+
+	.logo-img {
+		height: 32px;
+	}
+
+	.btn-phone,
+	.menu-toggle {
+		width: 38px;
+		height: 38px;
+	}
+
+	.header-container {
+		padding: 0 0.5rem;
+	}
+}
