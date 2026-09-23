@@ -1,5 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+	// Event Segmenter Tab Switcher (Plesy / Zábavy / Svatby)
+	window.switchEventTab = function(tabName, clickedBtn) {
+		const tabs = ['plesy', 'zabavy', 'svatby'];
+		tabs.forEach(t => {
+			const pane = document.getElementById('tab-' + t);
+			if (pane) {
+				pane.classList.toggle('active', t === tabName);
+			}
+		});
+
+		const buttons = document.querySelectorAll('.event-tab-btn');
+		buttons.forEach(btn => {
+			btn.classList.remove('active');
+			btn.setAttribute('aria-selected', 'false');
+		});
+
+		if (clickedBtn) {
+			clickedBtn.classList.add('active');
+			clickedBtn.setAttribute('aria-selected', 'true');
+		}
+	};
+
 	const debounce = (func, wait = 300) => {
 		let timeout;
 		return (...args) => {

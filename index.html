@@ -1,22 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BS Band – Kapela Pardubice | Živá hudba na svatby, plesy, zábavy</title>
+	<title>BS Band – Živá kapela Pardubice | Plesy, taneční zábavy, svatby a oslavy</title>
 	<meta name="description"
-		content="Hledáte energickou živou kapelu v Pardubicích nebo Hradci Králové? BS Band - rock & pop cover band pro vaši svatbu, ples, firemní akci, zábavu či oslavu ve Východních Čechách. 100% live hudba!">
+		content="Hledáte energickou 100% živou kapelu na ples, taneční zábavu nebo svatbu v Pardubicích či Hradci Králové? BS Band - rock & pop hity, dechy i valčíky. Ověřte volný termín!">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<link rel="stylesheet" href="style.css" title="Styl 1" id="theme-style-1">
+	<link rel="stylesheet" href="style.css">
 
 	<link href="assets/images/logoBSband.jpg" rel="icon" type="image/jpg" />
 	<link href="assets/images/logoBSband.jpg" rel="shortcut icon" type="image/jpg" />
@@ -27,7 +28,7 @@
 	  "@type": "MusicGroup",
 	  "name": "BS Band",
 	  "alternateName": "BSband",
-	  "description": "Energická kapela z Pardubic (cover band) hrající na svatbách, plesech, firemních akcích, zábavách a oslavách ve Východních Čechách.",
+	  "description": "100% živá rock-popová kapela z Pardubic hrající na společenských plesech, tanečních zábavách, festivalech, svatbách a oslavách ve Východních Čechách.",
 	  "genre": ["Rock", "Pop", "Cover Band", "Taneční hudba", "Hudba na ples", "Hudba na zábavu"],
 	  "location": {
 	    "@type": "Place",
@@ -50,21 +51,13 @@
 	    {
 	      "@type": "City",
 	      "name": "Hradec Králové"
-	    },
-		{
-		  "@type": "AdministrativeArea",
-		  "name": "Pardubický kraj"
-		},
-		{
-		  "@type": "AdministrativeArea",
-		  "name": "Královéhradecký kraj"
-		}
+	    }
 	  ],
 	  "url": "https://www.bsband.cz/",
 	  "sameAs": [
 	    "https://facebook.com/bonesaver",
 	    "https://www.instagram.com/bonesaver.cz",
-		"https://www.youtube.com/@Bonesaver"
+	    "https://www.youtube.com/@Bonesaver"
 	  ],
 	  "contactPoint": {
         "@type": "ContactPoint",
@@ -72,207 +65,614 @@
         "email": "bonesavermusic@gmail.com",
         "contactType": "Booking Agent / Manager",
         "name": "Ing. Miroslav Bečička",
-		"areaServed": ["CZ"]
+        "areaServed": ["CZ"]
       }
 	}
 	</script>
-
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K2S6F0H8K"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() { dataLayer.push(arguments); }
 	gtag('js', new Date());
-
 	gtag('config', 'G-2K2S6F0H8K');
 </script>
 
 <body>
+
+	<!-- TOP ANNOUNCEMENT BAR -->
+	<div class="top-announcement">
+		<span>⚡ 100% LIVE HUDBA Z PARDUBIC</span> • <span>Přijímáme poptávky pro sezónu plesů a zábav 2026/2027</span>
+	</div>
+
+	<!-- SITE HEADER -->
 	<header class="site-header">
 		<div class="container header-container">
 			<div class="logo">
 				<a href="index.html">
-					<span class="logo-text">BS band</span>
+					<div class="logo-badge">
+						<img src="assets/images/logoBSband.jpg" alt="BS Band logo" class="logo-img">
+					</div>
+					<div class="logo-text-group">
+						<span class="logo-text">BS <span>BAND</span></span>
+						<span class="logo-sub">Živá kapela • Pardubice</span>
+					</div>
 				</a>
 			</div>
+
 			<nav class="main-nav">
-				<button id="menu-toggle" class="menu-toggle" aria-label="Přepnout menu" aria-expanded="false">
-					<svg viewBox="0 0 100 80" width="30" height="30" class="hamburger-icon">
-						<rect width="100" height="12" rx="8"></rect>
-						<rect y="34" width="100" height="12" rx="8"></rect>
-						<rect y="68" width="100" height="12" rx="8"></rect>
-					</svg>
-					<svg viewBox="0 0 80 80" width="30" height="30" class="close-icon">
-						<line x1="20" y1="20" x2="60" y2="60" stroke-width="10" stroke-linecap="round" />
-						<line x1="60" y1="20" x2="20" y2="60" stroke-width="10" stroke-linecap="round" />
-					</svg>
-				</button>
 				<ul class="nav-list" id="nav-list">
 					<li><a href="index.html" class="active">Úvod</a></li>
+					<li><a href="#events">Plesy & Zábavy</a></li>
+					<li><a href="#band">O kapele</a></li>
 					<li><a href="repertoar.html">Repertoár</a></li>
 					<li><a href="ukazky.html">Ukázky</a></li>
 					<li><a href="kontakt.html">Kontakt</a></li>
 				</ul>
+
+				<div class="header-actions">
+					<a href="tel:+420734393711" class="btn-phone">
+						<i class="fas fa-phone-alt"></i> +420 734 393 711
+					</a>
+					<a href="#booking" class="btn btn-primary">
+						<i class="fas fa-calendar-check"></i> Poptat termín
+					</a>
+					<button id="menu-toggle" class="menu-toggle" aria-label="Přepnout menu" aria-expanded="false">
+						<svg viewBox="0 0 100 80" width="24" height="24" class="hamburger-icon">
+							<rect width="100" height="12" rx="6"></rect>
+							<rect y="34" width="100" height="12" rx="6"></rect>
+							<rect y="68" width="100" height="12" rx="6"></rect>
+						</svg>
+						<svg viewBox="0 0 80 80" width="24" height="24" class="close-icon">
+							<line x1="20" y1="20" x2="60" y2="60" stroke-width="8" stroke-linecap="round" />
+							<line x1="60" y1="20" x2="20" y2="60" stroke-width="8" stroke-linecap="round" />
+						</svg>
+					</button>
+				</div>
 			</nav>
 		</div>
 	</header>
 
 	<main>
-		<section id="hero" class="animated-section">
-			<div class="hero-overlay"></div>
-			<div class="container hero-content">
-				<h1>Energická kapela pro vaši akci</h1>
-				<p class="subtitle">SVATBY &nbsp; PLESY &nbsp; FIREMNÍ VEČÍRKY &nbsp; OSLAVY &nbsp; ZÁBAVY</p>
-				<p class="hero-description">Jsme <strong>BS band</strong>, živá <strong>hudba z Pardubic</strong>, a
-					přinášíme 100% live smršť rockových, popových a tanečních <strong>cover</strong> hitů, které
-					rozproudí každou generaci.</p>
-				<p class="bands-list">Kabát • Harlej • Tři sestry • Arakain • Rybičky 48 • AC/DC • Olympic • Horkýže
-					Slíže • Škwor • Lucie • Chinaski • Kryštof • Katapult • Žlutý pes a mnoho dalších...</p>
-				<div class="hero-buttons">
-					<a href="#about" class="btn btn-primary scroll-link"><i class="fas fa-guitar"></i> Více o nás</a>
-					<a href="kontakt.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Poptat
-						termín</a>
+
+		<!-- HERO SECTION (Split 2-Column: Text left, Clear band photo right) -->
+		<section id="hero">
+			<div class="container hero-container-grid">
+				<div class="hero-text-col">
+					<div class="hero-badge">
+						<span class="pulse-dot"></span>
+						100% ŽIVÁ HUDEBNÍ PRODUKCE Z PARDUBIC
+					</div>
+
+					<h1>
+						Živá hudba, která rozproudí <br>
+						<span class="highlight-electric">váš ples i taneční zábavu</span>
+					</h1>
+
+					<p class="hero-description">
+						Jsme <strong>BS Band</strong> – parta zkušených muzikantů z <strong>Pardubic</strong>. 
+						Hrajeme 100% naživo slavnostní valčíky a polky, moderní pop i nefalšovaný rockový nářez, který zvedne ze židlí celý sál.
+					</p>
+
+					<div class="hero-badges-list">
+						<span class="hero-tag"><i class="fas fa-bolt"></i> 100% Live bez playbacku</span>
+						<span class="hero-tag"><i class="fas fa-music"></i> Saxofon • Klávesy • Kytary • Basa • Bicí</span>
+						<span class="hero-tag"><i class="fas fa-volume-high"></i> Vlastní profi zvuk i osvětlení</span>
+					</div>
+
+					<div class="hero-buttons">
+						<a href="#booking" class="btn btn-primary scroll-link">
+							<i class="fas fa-calendar-check"></i> Ověřit volný termín
+						</a>
+						<a href="#events" class="btn btn-secondary scroll-link">
+							<i class="fas fa-guitar"></i> Program na akce
+						</a>
+					</div>
+				</div>
+
+				<div class="hero-image-col">
+					<div class="hero-photo-card">
+						<img src="assets/images/BSband.jpg" alt="Kapela BS Band Pardubice" class="hero-band-img">
+						<div class="hero-photo-badge">
+							<div class="badge-left">
+								<i class="fas fa-users"></i>
+								<span>BS Band • 100% Live kapela</span>
+							</div>
+							<span class="badge-tag">Pardubice</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="about" class="content-section animated-section bg-dark">
-			<div class="container text-center">
-				<h2>Vaše kapela z Pardubic!</h2>
-				<p class="lead">Jsme parta muzikantů z <strong>Pardubic</strong>, která miluje energii živého hraní.
-					Jako zkušená <strong>hudební skupina</strong> a <strong>cover band</strong> se specializujeme na
-					známé rockové a popové hity.</p>
-				<p>Zahrajeme vám skvělou <strong>hudbu na zábavu</strong>, ale nebojíme se ani tanečních kol včetně
-					polky a valčíku – jsme perfektní <strong>kapela na ples</strong>. Naše vystoupení je vždy 100%
-					naživo, plné energie a s profesionálním zvukem.</p>
-				<p>Rádi zahrajeme jako vaše <strong>kapela na svatbu</strong>, <strong>ples</strong>, firemní akci,
-					narozeninovou oslavu nebo veřejnou <strong>zábavu</strong> v <strong>Pardubicích</strong>,
-					<strong>Hradci Králové</strong> a širokém okolí <strong>Východních Čech</strong>.
-				</p>
-				<a href="repertoar.html" class="btn btn-primary"><i class="fas fa-list-music"></i> ZOBRAZIT
-					REPERTOÁR</a>
+		<!-- EVENT SEGMENTER SECTION (Targeted for Balls, Dances, Weddings) -->
+		<section id="events" class="content-section">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-tag">Program na míru</span>
+					<h2>Co pro vaši událost připravíme?</h2>
+					<p>Každá akce vyžaduje jinou dynamiku a přístup. Podívejte se, jak sestavujeme repertoár a techniku podle typu události.</p>
+					
+					<div class="event-tabs-nav" role="tablist">
+						<button class="event-tab-btn active gold" onclick="switchEventTab('plesy', this)" role="tab" aria-selected="true">
+							<i class="fas fa-graduation-cap"></i> Společenské & Maturitní plesy
+						</button>
+						<button class="event-tab-btn" onclick="switchEventTab('zabavy', this)" role="tab" aria-selected="false">
+							<i class="fas fa-guitar"></i> Taneční zábavy & Open-Air
+						</button>
+						<button class="event-tab-btn" onclick="switchEventTab('svatby', this)" role="tab" aria-selected="false">
+							<i class="fas fa-rings-wedding"></i> Svatby & Oslavy
+						</button>
+					</div>
+				</div>
+
+				<!-- TAB 1: PLESY -->
+				<div id="tab-plesy" class="event-tab-pane active">
+					<div class="event-detail-card">
+						<div class="event-info">
+							<span class="section-tag gold">Hlavní specializace kapely</span>
+							<h3>Maturitní a společenské plesy</h3>
+							<p>
+								Ples potřebuje dokonalou gradaci: začínáme slavnostním tónem a klasickými tanci (valčík, polka, slowrock, standardy) a po půlnoci rozjíždíme rockovo-popovou smršť, kdy celý sál skáče na parketu.
+							</p>
+							<ul class="event-features">
+								<li>
+									<span class="feature-check gold"><i class="fas fa-check"></i></span>
+									<div><strong>Reprezentativní vzhled:</strong> Hrajeme v odpovídajícím společenském oblečení a s profesionálním vystupováním.</div>
+								</li>
+								<li>
+									<span class="feature-check gold"><i class="fas fa-check"></i></span>
+									<div><strong>Podpora programu a tomboly:</strong> Rádi zapůjčíme bezdrátové mikrofony pro moderátora a půlnoční překvapení.</div>
+								</li>
+								<li>
+									<span class="feature-check gold"><i class="fas fa-check"></i></span>
+									<div><strong>Vlastní zvukař & světelná rampa:</strong> Vyvážený zvuk v celém sále, který neohlušuje hosty u stolů.</div>
+								</li>
+							</ul>
+							<div style="margin-top: 1rem;">
+								<a href="#booking" class="btn btn-primary scroll-link">
+									<i class="fas fa-calendar-check"></i> Poptat kapelu na ples
+								</a>
+							</div>
+						</div>
+
+						<div class="event-media">
+							<div class="event-video-frame">
+								<iframe src="https://www.youtube.com/embed/dqt1p5ysqaQ?rel=0" 
+									title="BS Band na plese - lidovky a taneční kola" 
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen loading="lazy"></iframe>
+							</div>
+							<span class="media-caption">Reálný záznam z plesu: lidovky a taneční kola</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- TAB 2: ZÁBAVY -->
+				<div id="tab-zabavy" class="event-tab-pane">
+					<div class="event-detail-card">
+						<div class="event-info">
+							<span class="section-tag">Energie & Plný parket</span>
+							<h3>Taneční zábavy & Letní parkety</h3>
+							<p>
+								Čistokrevná jízda od 20:00 do 02:00 ráno. Žádné zdlouhavé pauzy ani syntetické podklady z disket. Hrajeme největší české i světové pecky, které lidé milují a zpívají s pivem v ruce.
+							</p>
+							<ul class="event-features">
+								<li>
+									<span class="feature-check"><i class="fas fa-check"></i></span>
+									<div><strong>Hity, které táhnou lidi:</strong> Kabát, Harlej, Rybičky 48, Tři sestry, Arakain, AC/DC, Škwor, Chinaski, Lucie, Olympic.</div>
+								</li>
+								<li>
+									<span class="feature-check"><i class="fas fa-check"></i></span>
+									<div><strong>Poctivý live drajv:</strong> Dvě kytary, bicí, basovka a řízný saxofon dodávají coverům nezaměnitelnou šťávu.</div>
+								</li>
+								<li>
+									<span class="feature-check"><i class="fas fa-check"></i></span>
+									<div><strong>Výkonný aparát pro sály i venkovní areály:</strong> Silný, čistý sound a světla, které vytvoří festivalovou atmosféru.</div>
+								</li>
+							</ul>
+							<div style="margin-top: 1rem;">
+								<a href="#booking" class="btn btn-primary scroll-link">
+									<i class="fas fa-calendar-check"></i> Poptat taneční zábavu
+								</a>
+							</div>
+						</div>
+
+						<div class="event-media">
+							<div class="event-video-frame">
+								<iframe src="https://www.youtube.com/embed/JUKIvB2jqek?rel=0" 
+									title="BS Band Chvojenec 2024 - Taneční zábava" 
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen loading="lazy"></iframe>
+							</div>
+							<span class="media-caption">Reálný záznam: Živá kapela BS Band na akci ve Chvojenci</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- TAB 3: SVATBY -->
+				<div id="tab-svatby" class="event-tab-pane">
+					<div class="event-detail-card">
+						<div class="event-info">
+							<span class="section-tag">Pro váš velký den</span>
+							<h3>Svatby & Rodinné či firemní oslavy</h3>
+							<p>
+								Na svatbě se potkávají všechny věkové generace. Umíme vytvořit romantickou atmosféru pro první novomanželský tanec a večer to rozbalit v párty, na kterou budou hosté vzpomínat roky.
+							</p>
+							<ul class="event-features">
+								<li>
+									<span class="feature-check"><i class="fas fa-check"></i></span>
+									<div><strong>První novomanželský tanec na přání:</strong> Rádi pro vás natrénujeme vaši zamilovanou píseň.</div>
+								</li>
+								<li>
+									<span class="feature-check"><i class="fas fa-check"></i></span>
+									<div><strong>Respekt k harmonogramu:</strong> Přizpůsobíme se krájení dortu, svatebním hrám i časovému průběhu.</div>
+								</li>
+								<li>
+									<span class="feature-check"><i class="fas fa-check"></i></span>
+									<div><strong>Hudba o pauzách:</strong> Zajistíme příjemnou reprodukovanou hudbu i během přestávek kapely.</div>
+								</li>
+							</ul>
+							<div style="margin-top: 1rem;">
+								<a href="#booking" class="btn btn-primary scroll-link">
+									<i class="fas fa-calendar-check"></i> Poptat kapelu na svatbu
+								</a>
+							</div>
+						</div>
+
+						<div class="event-media">
+							<div class="event-video-frame">
+								<iframe src="https://www.youtube.com/embed/YP04H0f8l8w?rel=0" 
+									title="BS Band na svatbě v Uhřínově" 
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen loading="lazy"></iframe>
+							</div>
+							<span class="media-caption">Reálný záznam ze svatby v Uhřínově</span>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
-		<section id="band" class="content-section bg-dark-alt animated-section">
-			<div class="container text-center">
-				<h2>Poznejte naši hudební skupinu</h2>
+		<!-- BENTO GRID: PROČ ZVOLIT BS BAND -->
+		<section class="content-section" style="background: rgba(10, 14, 24, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-tag">Proč zvolit BS Band</span>
+					<h2>Vše, co potřebujete pro úspěšnou akci</h2>
+					<p>Žádné starosti navíc. Přivezeme špičkový zvuk, energii i spolehlivost.</p>
+				</div>
+
+				<div class="bento-grid">
+					<div class="bento-card">
+						<div class="bento-icon"><i class="fas fa-bolt"></i></div>
+						<h3>100% Živě bez playbacku</h3>
+						<p>Pět muzikantů na pódiu, bicí, baskytara, kytara, klávesy a saxofon. Poctivá muzikantská energie bez kouzel z disket.</p>
+					</div>
+
+					<div class="bento-card">
+						<div class="bento-icon gold"><i class="fas fa-volume-high"></i></div>
+						<h3>Kompletní technika v ceně</h3>
+						<p>Nemusíte shánět externího zvukaře ani světla. Máme vlastní výkonnou aparaturu, světelnou rampu i bezdrátové mikrofony.</p>
+					</div>
+
+					<div class="bento-card">
+						<div class="bento-icon"><i class="fas fa-list-music"></i></div>
+						<h3>Široký repertoár 100+ hitů</h3>
+						<p>Od polky a valčíku přes Olympic, Chinaski a Lucii až po Kabát, Harlej a AC/DC. Zábava pro každou generaci v sále.</p>
+					</div>
+
+					<div class="bento-card">
+						<div class="bento-icon gold"><i class="fas fa-handshake"></i></div>
+						<h3>Smlouva a 100% spolehlivost</h3>
+						<p>Písemná smlouva, garance termínu a včasný příjezd s instalací aparatury ještě před příchodem prvních hostů.</p>
+					</div>
+
+					<div class="bento-card">
+						<div class="bento-icon"><i class="fas fa-microphone-lines"></i></div>
+						<h3>Podpora programu a tomboly</h3>
+						<p>Rádi zapůjčíme mikrofony pořadatelům pro vyhlášení tomboly, předtančení, stužkování či proslovy.</p>
+					</div>
+
+					<div class="bento-card">
+						<div class="bento-icon gold"><i class="fas fa-map-location-dot"></i></div>
+						<h3>Pardubice, Hradec i celá ČR</h3>
+						<p>Působíme v celých Východních Čechách i po celé republice. Přijedeme kamkoliv, kde chtějí lidé poctivou živou hudbu.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- BAND MEMBERS (Authentic Photos) -->
+		<section id="band" class="content-section">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-tag">Obsazení kapely</span>
+					<h2>Muzikanti BS Band</h2>
+					<p>Parta přátel a zkušených muzikantů z Pardubic, která miluje energii živého hraní.</p>
+				</div>
+
 				<div class="band-grid">
-					<div class="member animated-item">
-						<img src="assets/images/member-PAD.JPG" alt="Petr Dolfi Adam" class="member-photo">
-						<div class="member-info">
-							<h3>Petr "Dolfi" Adam</h3>
-							<span class="role">Bicí</span>
+					<!-- Mirek Bečička -->
+					<div class="member-card">
+						<div class="member-photo-frame">
+							<img src="assets/images/member-MBE.JPG" alt="Mirek Bečička" loading="lazy">
 						</div>
+						<div class="member-name">Mirek Bečička</div>
+						<div class="member-role">Kytara, Saxofon, Zpěv</div>
+						<div class="member-detail">Kapelník & Manažer</div>
 					</div>
-					<div class="member animated-item">
-						<img src="assets/images/member-DSML.JPG" alt="David Pasta Syrovec ml." class="member-photo">
-						<div class="member-info">
-							<h3>David "Pasta" Syrovec ml.</h3>
-							<span class="role">Kytara</span>
+
+					<!-- Adéla Lhotová -->
+					<div class="member-card">
+						<div class="member-photo-frame">
+							<img src="assets/images/member-ALH.JPG" alt="Adéla Lhotová" loading="lazy">
 						</div>
+						<div class="member-name">Adéla Lhotová</div>
+						<div class="member-role">Klávesy, Zpěv</div>
+						<div class="member-detail">Vokály & Melodie</div>
 					</div>
-					<div class="member animated-item">
-						<img src="assets/images/member-DSST.JPG" alt="David Syrovec" class="member-photo">
-						<div class="member-info">
-							<h3>David Syrovec</h3>
-							<span class="role">Baskytara</span>
+
+					<!-- Petr Adam -->
+					<div class="member-card">
+						<div class="member-photo-frame">
+							<img src="assets/images/member-PAD.JPG" alt="Petr Adam" loading="lazy">
 						</div>
+						<div class="member-name">Petr "Dolfi" Adam</div>
+						<div class="member-role">Bicí souprava</div>
+						<div class="member-detail">Rytmika & Drive</div>
 					</div>
-					<div class="member animated-item">
-						<img src="assets/images/member-MBE.JPG" alt="Mirek Bečička" class="member-photo">
-						<div class="member-info">
-							<h3>Mirek Bečička</h3>
-							<span class="role">Kytara, Sax, Zpěv</span>
+
+					<!-- David Syrovec ml. -->
+					<div class="member-card">
+						<div class="member-photo-frame">
+							<img src="assets/images/member-DSML.JPG" alt="David Syrovec ml." loading="lazy">
 						</div>
+						<div class="member-name">David "Pasta" ml.</div>
+						<div class="member-role">Sólová kytara</div>
+						<div class="member-detail">Sóla & Riffy</div>
 					</div>
-					<div class="member animated-item">
-						<img src="assets/images/member-ALH.JPG" alt="Adéla Lhotová" class="member-photo">
-						<div class="member-info">
-							<h3>Adéla Lhotová</h3>
-							<span class="role">Klávesy, Zpěv</span>
+
+					<!-- David Syrovec st. -->
+					<div class="member-card">
+						<div class="member-photo-frame">
+							<img src="assets/images/member-DSST.JPG" alt="David Syrovec" loading="lazy">
 						</div>
+						<div class="member-name">David Syrovec</div>
+						<div class="member-role">Baskytara</div>
+						<div class="member-detail">Baskytarový groove</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="references" class="content-section animated-section bg-dark">
-			<div class="container text-center">
-				<h2>Kde jsme hráli?</h2>
-				<div class="reference-grid">
-					<div class="ref-card">Svatby (Pardubice, Hradec Králové)</div>
-					<div class="ref-card">Sedlické probuzení</div>
-					<div class="ref-card">Ples ZŠ Svítkov</div>
-					<div class="ref-card">Ples SDH Lipoltice</div>
-					<div class="ref-card">Sportovní ples Miletín</div>
-					<div class="ref-card">Ples spolku Dubany</div>
-					<div class="ref-card">Restaurace Rosignano</div>
-					<div class="ref-card">Hospůdka Pod Věží Doubravice</div>
+		<!-- REAL VIDEOS HUB -->
+		<section id="videos" class="content-section" style="background: rgba(10, 14, 24, 0.4); border-top: 1px solid var(--border-subtle);">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-tag">Autentická videa</span>
+					<h2>Poslechněte si nás v akci</h2>
+					<p>Reálné ukázky přímo z vystoupení. Žádný studiový playback.</p>
 				</div>
-				<p class="trust-note">"Skvělá energie, všichni se bavili až do rána! Doporučujeme." – Spokojený klient
-				</p>
+
+				<div class="video-grid">
+					<div class="video-card">
+						<div class="video-card-header">
+							<h4>Live Mix – Sestřih z vystoupení</h4>
+							<span class="video-tag">Rock & Pop</span>
+						</div>
+						<div class="video-wrapper">
+							<iframe src="https://www.youtube.com/embed/_o0jpleViPc?rel=0" 
+								title="BS Band Live Mix" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen loading="lazy"></iframe>
+						</div>
+						<p>Krátký sestřih z živých vystoupení kapely BS Band.</p>
+					</div>
+
+					<div class="video-card">
+						<div class="video-card-header">
+							<h4>Plesová ukázka – Lidovky & Valčík</h4>
+							<span class="video-tag gold">Ples</span>
+						</div>
+						<div class="video-wrapper">
+							<iframe src="https://www.youtube.com/embed/dqt1p5ysqaQ?rel=0" 
+								title="BS Band na plese - lidovky" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen loading="lazy"></iframe>
+						</div>
+						<p>Ukázka klasických tanečních kol na společenském plese.</p>
+					</div>
+
+					<div class="video-card">
+						<div class="video-card-header">
+							<h4>Taneční zábava – Chvojenec 2024</h4>
+							<span class="video-tag">Zábava</span>
+						</div>
+						<div class="video-wrapper">
+							<iframe src="https://www.youtube.com/embed/JUKIvB2jqek?rel=0" 
+								title="BS Band Chvojenec 2024" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen loading="lazy"></iframe>
+						</div>
+						<p>Záznam z hraní naší kapely na taneční zábavě ve Chvojenci.</p>
+					</div>
+
+					<div class="video-card">
+						<div class="video-card-header">
+							<h4>Svatební party – Uhřínov</h4>
+							<span class="video-tag">Svatba</span>
+						</div>
+						<div class="video-wrapper">
+							<iframe src="https://www.youtube.com/embed/YP04H0f8l8w?rel=0" 
+								title="BS Band na svatbě Uhřínov" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen loading="lazy"></iframe>
+						</div>
+						<p>Ukázka, jak hraje naše kapela na svatební oslavě.</p>
+					</div>
+				</div>
+
+				<div class="text-center" style="margin-top: 2.5rem;">
+					<a href="ukazky.html" class="btn btn-secondary">
+						<i class="fas fa-play-circle"></i> Zobrazit všechny ukázky
+					</a>
+				</div>
 			</div>
 		</section>
 
-		<section id="video" class="content-section bg-dark animated-section">
-			<div class="container text-center">
-				<h2>Podívejte se na naši kapelu v akci!</h2>
-				<div class="video-container">
-					<iframe src="https://www.youtube.com/embed/_o0jpleViPc?rel=0"
-						title="BS Band Live Mix - Živá kapela Pardubice (cover band)" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen loading="lazy"></iframe>
+		<!-- REFERENCES & TRUST -->
+		<section id="references" class="content-section">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-tag">Zkušenosti z akcí</span>
+					<h2>Kde jste nás mohli slyšet?</h2>
+					<p>Hrajeme pro hasičské sbory, školy, sportovní kluby, obce i soukromé pořadatele.</p>
 				</div>
-				<a href="ukazky.html" class="btn btn-primary"><i class="fas fa-play-circle"></i> DALŠÍ UKÁZKY</a>
+
+				<div class="ref-grid">
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Ples ZŠ Svítkov</div>
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Ples SDH Lipoltice</div>
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Sportovní ples Miletín</div>
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Ples spolku Dubany</div>
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Sedlické probuzení</div>
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Taneční zábava Chvojenec</div>
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Svatby (Pardubice, Hradec)</div>
+					<div class="ref-pill"><i class="fas fa-check text-cyan-bright"></i> Restaurace Rosignano</div>
+				</div>
+
+				<div class="trust-quote-box">
+					<i class="fas fa-quote-left"></i>
+					<p class="trust-quote-text">„Skvělá energie, všichni hosté se bavili až do rána! Repertoár perfektně sedl jak starším na valčíky, tak mladým po půlnoci. Určitě doporučujeme.“</p>
+					<span class="trust-author">– Spokojený pořadatel plesu</span>
+				</div>
 			</div>
 		</section>
 
-		<section id="social" class="content-section bg-dark-alt animated-section">
-			<div class="container text-center">
-				<h2>Sledujte BS Band online</h2>
-				<div class="social-icons-only">
-					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener"
-						class="social-circle facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener"
-						class="social-circle instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+		<!-- SMART BOOKING FORM (Web3Forms) -->
+		<section id="booking" class="booking-section" style="background: rgba(10, 14, 24, 0.6); border-top: 1px solid var(--border-glass);">
+			<div class="container">
+				<div class="booking-card">
+					<div class="text-center">
+						<span class="section-tag">Nezávazná poptávka vystoupení</span>
+						<h2>Ověřte si volný termín pro vaši akci</h2>
+						<p>Vyplňte základní údaje. Kapelník Ing. Miroslav Bečička se vám ozve do 24 hodin a vše spolu nezávazně proberete.</p>
+					</div>
+
+					<form action="https://api.web3forms.com/submit" method="POST" class="booking-form contact-form">
+						<input type="hidden" name="access_key" value="e84a3a8c-ba7b-47af-a45e-bd69ce87b8a1">
+						<input type="hidden" name="subject" value="Nová poptávka termínu - BS Band">
+						<input type="hidden" name="from_name" value="BS Band Web">
+
+						<div class="form-row">
+							<div class="form-group">
+								<label for="event-type">Typ události *</label>
+								<select id="event-type" name="event-type" class="form-control" required>
+									<option value="" disabled selected>Vyberte typ akce</option>
+									<option value="Maturitní / Společenský ples">🎓 Maturitní / Společenský ples</option>
+									<option value="Taneční zábava / Letní parket">🎸 Taneční zábava / Letní parket</option>
+									<option value="Svatba">💍 Svatba</option>
+									<option value="Oslava / Narozeniny">🎉 Narozeninová / Soukromá oslava</option>
+									<option value="Firemní večírek">🏢 Firemní večírek</option>
+									<option value="Obecní slavnost / Festival">🏛 Obecní slavnost / Festival</option>
+									<option value="Jiné">Jiné</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="event-date">Předpokládané datum akce *</label>
+								<input type="date" id="event-date" name="event-date" class="form-control" required>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group">
+								<label for="event-location">Místo konání (obec / město / sál) *</label>
+								<input type="text" id="event-location" name="event-location" class="form-control" placeholder="např. Pardubice, Chrudim, Hradec Králové..." required>
+							</div>
+
+							<div class="form-group">
+								<label for="client-name">Vaše jméno nebo pořadatel *</label>
+								<input type="text" id="client-name" name="name" class="form-control" placeholder="Vaše jméno / Spolek hasičů / Třída" required>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group">
+								<label for="client-phone">Telefonní kontakt *</label>
+								<input type="tel" id="client-phone" name="phone" class="form-control" placeholder="+420 777 000 000" required>
+							</div>
+
+							<div class="form-group">
+								<label for="client-email">Váš email *</label>
+								<input type="email" id="client-email" name="email" class="form-control" placeholder="vas@email.cz" required>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="client-message">Poznámka / Bližší podrobnosti</label>
+							<textarea id="client-message" name="message" class="form-control" placeholder="Orientační čas začátku, předpokládaný počet hostů, specifická přání..." rows="3"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem; font-size: 1.05rem;">
+							<i class="fas fa-paper-plane"></i> Odeslat nezávaznou poptávku
+						</button>
+					</form>
+
+					<div class="form-direct-phone">
+						<span><i class="fas fa-phone-alt"></i> Raději voláte? Kontaktujte přímo manažera: <a href="tel:+420734393711">+420 734 393 711</a> (Ing. Miroslav Bečička)</span>
+						<span><i class="fas fa-envelope"></i> Email: <a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></span>
+					</div>
 				</div>
 			</div>
 		</section>
 
 	</main>
 
+	<!-- SITE FOOTER -->
 	<footer class="site-footer">
 		<div class="container footer-grid">
-			<div class="footer-form">
-				<h3>Napište nám</h3>
-				<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-					<input type="hidden" name="access_key" value="e84a3a8c-ba7b-47af-a45e-bd69ce87b8a1">
-					<input type="hidden" name="subject" value="Nová poptávka - BS Band">
-					<input type="hidden" name="from_name" value="BS Band web">
-					<div class="form-group">
-						<input type="text" name="name" placeholder="Vaše jméno" required aria-label="Jméno">
-					</div>
-					<div class="form-group">
-						<input type="email" name="email" placeholder="Váš email" required aria-label="Email">
-					</div>
-					<div class="form-group">
-						<select name="event-type" aria-label="Typ akce">
-							<option value="" disabled selected>Typ akce</option>
-							<option value="svatba">Svatba</option>
-							<option value="ples">Ples</option>
-							<option value="oslava">Oslava</option>
-							<option value="firemni">Firemní večírek</option>
-							<option value="jine">Jiné</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<textarea name="message" placeholder="Vaše zpráva" rows="4" required
-							aria-label="Zpráva"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Odeslat</button>
-				</form>
+			<div class="footer-brand">
+				<div class="logo-text" style="margin-bottom: 0.5rem;">BS <span>BAND</span></div>
+				<p>100% živá rock-popová a společenská kapela z Pardubic. Hrajeme na plesech, tanečních zábavách, festivalech, svatbách a oslavách.</p>
+				<div class="footer-social-icons">
+					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/@Bonesaver" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+
+			<div class="footer-col">
+				<h4>Rychlá navigace</h4>
+				<ul class="footer-links">
+					<li><a href="index.html">Úvod</a></li>
+					<li><a href="#events">Plesy & Zábavy</a></li>
+					<li><a href="#band">O kapele</a></li>
+					<li><a href="repertoar.html">Repertoár</a></li>
+					<li><a href="ukazky.html">Živé ukázky</a></li>
+					<li><a href="kontakt.html">Kontakt & Rezervace</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Kontakt & Booking</h4>
+				<ul class="footer-contact-list">
+					<li><i class="fas fa-user"></i> Ing. Miroslav Bečička (Manažer)</li>
+					<li><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></li>
+					<li><i class="fas fa-envelope"></i> <a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></li>
+					<li><i class="fas fa-map-marker-alt"></i> Pardubice, Hradec Králové a ČR</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container footer-bottom">
+			<p>© <span id="current-year"></span> BS Band. Všechna práva vyhrazena. 100% Live Music.</p>
+		</div>
+	</footer>
+
 	<script src="script.js"></script>
 </body>
 

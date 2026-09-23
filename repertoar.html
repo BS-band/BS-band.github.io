@@ -4,83 +4,119 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Repertoár BS Band (Pardubice): Seznam písní (Rock, Pop, Cover) | Hudba na ples i zábavu</title>
+	<title>Repertoár BS Band (Pardubice) | Seznam písní pro plesy, zábavy i svatby</title>
 	<meta name="description"
-		content="Prohlédněte si repertoár BS Bandu z Pardubic. Hrajeme rock, pop, české i zahraniční covery. Ideální hudba na ples, svatbu, zábavu i firemní večírek ve Východních Čechách.">
+		content="Prohlédněte si bohatý repertoár kapely BS Band z Pardubic. Více než 100 hitů – rock, pop, lidovky, valčíky i ploužáky pro váš ples či taneční zábavu.">
 	<meta name="keywords"
 		content="repertoár kapely, seznam písní, bs band, kapela pardubice, cover band, rock, pop, hudba na ples, hudba na svatbu, hudba na zábavu, východní čechy">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<link rel="stylesheet" href="style.css" title="Styl 1" id="theme-style-1">
+	<link rel="stylesheet" href="style.css">
 
 	<link href="assets/images/logoBSband.jpg" rel="icon" type="image/jpg" />
 	<link href="assets/images/logoBSband.jpg" rel="shortcut icon" type="image/jpg" />
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K2S6F0H8K"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() { dataLayer.push(arguments); }
 	gtag('js', new Date());
-
 	gtag('config', 'G-2K2S6F0H8K');
 </script>
 
 <body>
+
+	<!-- SITE HEADER -->
 	<header class="site-header">
 		<div class="container header-container">
 			<div class="logo">
 				<a href="index.html">
-					<span class="logo-text">BS band</span>
+					<div class="logo-badge">
+						<img src="assets/images/logoBSband.jpg" alt="BS Band logo" class="logo-img">
+					</div>
+					<div class="logo-text-group">
+						<span class="logo-text">BS <span>BAND</span></span>
+						<span class="logo-sub">Živá kapela • Pardubice</span>
+					</div>
 				</a>
 			</div>
+
 			<nav class="main-nav">
-				<button id="menu-toggle" class="menu-toggle" aria-label="Přepnout menu" aria-expanded="false">
-					<svg viewBox="0 0 100 80" width="30" height="30" class="hamburger-icon">
-						<rect width="100" height="12" rx="8"></rect>
-						<rect y="34" width="100" height="12" rx="8"></rect>
-						<rect y="68" width="100" height="12" rx="8"></rect>
-					</svg>
-					<svg viewBox="0 0 80 80" width="30" height="30" class="close-icon">
-						<line x1="20" y1="20" x2="60" y2="60" stroke-width="10" stroke-linecap="round" />
-						<line x1="60" y1="20" x2="20" y2="60" stroke-width="10" stroke-linecap="round" />
-					</svg>
-				</button>
 				<ul class="nav-list" id="nav-list">
 					<li><a href="index.html">Úvod</a></li>
+					<li><a href="index.html#events">Plesy & Zábavy</a></li>
+					<li><a href="index.html#band">O kapele</a></li>
 					<li><a href="repertoar.html" class="active">Repertoár</a></li>
 					<li><a href="ukazky.html">Ukázky</a></li>
 					<li><a href="kontakt.html">Kontakt</a></li>
 				</ul>
+
+				<div class="header-actions">
+					<a href="tel:+420734393711" class="btn-phone">
+						<i class="fas fa-phone-alt"></i> +420 734 393 711
+					</a>
+					<a href="kontakt.html" class="btn btn-primary">
+						<i class="fas fa-calendar-check"></i> Poptat termín
+					</a>
+					<button id="menu-toggle" class="menu-toggle" aria-label="Přepnout menu" aria-expanded="false">
+						<svg viewBox="0 0 100 80" width="24" height="24" class="hamburger-icon">
+							<rect width="100" height="12" rx="6"></rect>
+							<rect y="34" width="100" height="12" rx="6"></rect>
+							<rect y="68" width="100" height="12" rx="6"></rect>
+						</svg>
+						<svg viewBox="0 0 80 80" width="24" height="24" class="close-icon">
+							<line x1="20" y1="20" x2="60" y2="60" stroke-width="8" stroke-linecap="round" />
+							<line x1="60" y1="20" x2="20" y2="60" stroke-width="8" stroke-linecap="round" />
+						</svg>
+					</button>
+				</div>
 			</nav>
 		</div>
 	</header>
 
 	<main>
-		<section class="page-title-section bg-dark-alt animated-section">
-			<div class="container text-center">
-				<h1>Náš Repertoár (Kapela BS Band)</h1>
-				<p>Prohlédněte si výběr z repertoáru naší <strong>pardubické kapely</strong>. Seznam můžete filtrovat
-					podle interpreta nebo názvu hitu. Hrajeme osvědčené <strong>covery</strong> pro každou příležitost.
+		<!-- PAGE HEADER -->
+		<section class="content-section text-center" style="padding: 4.5rem 0 2rem;">
+			<div class="container">
+				<span class="section-tag">Seznam skladeb</span>
+				<h1>Repertoár kapely BS Band</h1>
+				<p style="max-width: 720px; margin: 0 auto 1.5rem; font-size: 1.1rem;">
+					Hrajeme osvědčené české i světové <strong>covery pro každou příležitost</strong> – od slavnostních plesových kol (valčíky, polky) přes popové melodie až po největší rockové hymny.
 				</p>
-				<p>Kompletní seznam v PDF: <a href="assets/resources/repertoár_bsband.pdf" target="_blank"
-						class="pdf-link"><i class="fas fa-file-pdf"></i> STÁHNOUT REPERTOÁR</a></p>
+				<p>
+					<a href="assets/resources/repertoár_bsband.pdf" target="_blank" class="btn btn-secondary">
+						<i class="fas fa-file-pdf" style="color: var(--cyan-bright);"></i> Stáhnout kompletní repertoár v PDF
+					</a>
+				</p>
 			</div>
 		</section>
 
-		<section id="repertoire-table-section" class="content-section bg-dark">
+		<!-- REPERTOIRE TABLE SECTION -->
+		<section id="repertoire-table-section" class="content-section" style="padding-top: 1rem;">
 			<div class="container">
 
 				<div class="repertoire-controls">
-					<label for="repertoire-filter">Filtrovat repertoár:</label>
-					<input type="text" id="repertoire-filter" placeholder="Zadejte interpreta nebo název...">
+					<div class="repertoire-search-wrapper">
+						<i class="fas fa-search"></i>
+						<input type="text" id="repertoire-filter" placeholder="Hledejte interpreta, název písně nebo styl...">
+					</div>
+					<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+						<button class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;" onclick="setGenreFilter('')">Vše</button>
+						<button class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;" onclick="setGenreFilter('rock')">🎸 Rock</button>
+						<button class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;" onclick="setGenreFilter('pop')">✨ Pop & Poprock</button>
+						<button class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;" onclick="setGenreFilter('valčík')">💃 Valčík & Polka</button>
+						<button class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;" onclick="setGenreFilter('ploužák')">❤️ Ploužáky</button>
+					</div>
 				</div>
 
 				<div class="table-responsive-wrapper">
@@ -105,69 +141,72 @@
 				<div id="load-more-sentinel"></div>
 
 				<div id="loading-indicator" class="text-center" style="display: none; padding: 2rem;">
-					<i class="fas fa-spinner fa-spin fa-2x" style="color: var(--primary-color);"></i>
-					<p style="margin-top: 0.5rem; color: var(--grey-text-dark);">Načítání dalších písní...</p>
+					<i class="fas fa-spinner fa-spin fa-2x" style="color: var(--cyan-bright);"></i>
+					<p style="margin-top: 0.5rem; color: var(--text-muted);">Načítání dalších písní...</p>
 				</div>
 
-				<p class="repertoire-note text-center">Nenašli jste svou oblíbenou píseň? Napište nám! Jako flexibilní
-					<strong>cover band z Pardubic</strong> jsme otevřeni novým návrhům a speciálním přáním (s
-					dostatečným předstihem).</p>
+				<div class="trust-quote-box" style="margin-top: 3.5rem;">
+					<i class="fas fa-music"></i>
+					<p class="trust-quote-text">Nenašli jste svou oblíbenou píseň? Napište nám! Jako flexibilní kapela z Pardubic rádi natrénujeme speciální skladby na vaše přání (např. první novomanželský tanec na svatbě či půlnoční překvapení na plese).</p>
+					<span class="trust-author">– BS Band Pardubice</span>
+				</div>
+
 			</div>
 		</section>
 
 	</main>
 
+	<!-- SITE FOOTER -->
 	<footer class="site-footer">
 		<div class="container footer-grid">
-			<div class="footer-form">
-				<h3>Napište nám</h3>
-				<form action="#" method="POST" class="contact-form">
-					<div class="form-group">
-						<input type="text" name="name" placeholder="Vaše jméno" required aria-label="Jméno">
-					</div>
-					<div class="form-group">
-						<input type="email" name="email" placeholder="Váš email" required aria-label="Email">
-					</div>
-					<div class="form-group">
-						<select name="event-type" aria-label="Typ akce">
-							<option value="" disabled selected>Typ akce</option>
-							<option value="svatba">Svatba</option>
-							<option value="ples">Ples</option>
-							<option value="oslava">Oslava</option>
-							<option value="firemni">Firemní večírek</option>
-							<option value="jine">Jiné</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<textarea name="message" placeholder="Vaše zpráva" rows="4" required
-							aria-label="Zpráva"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Odeslat</button>
-				</form>
+			<div class="footer-brand">
+				<div class="logo-text" style="margin-bottom: 0.5rem;">BS <span>BAND</span></div>
+				<p>100% živá rock-popová a společenská kapela z Pardubic pro plesy, taneční zábavy, svatby a oslavy.</p>
+				<div class="footer-social-icons">
+					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/@Bonesaver" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+				</div>
 			</div>
-			<div class="footer-info">
-				<h3>Kontakt</h3>
-				<div class="contact-details">
-					<p><i class="fas fa-user"></i> Ing. Miroslav Bečička</p>
-					<p><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></p>
-					<p><i class="fas fa-envelope"></i> <a
-							href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
-					<p><i class="fas fa-map-marker-alt"></i> Pardubice & Východní Čechy</p>
-				</div>
-				<div class="footer-social-simple">
-					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" aria-label="Facebook"><i
-							class="fab fa-facebook-f"></i></a>
-					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener"
-						aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-				</div>
+
+			<div class="footer-col">
+				<h4>Rychlá navigace</h4>
+				<ul class="footer-links">
+					<li><a href="index.html">Úvod</a></li>
+					<li><a href="index.html#events">Plesy & Zábavy</a></li>
+					<li><a href="index.html#band">O kapele</a></li>
+					<li><a href="repertoar.html">Repertoár</a></li>
+					<li><a href="ukazky.html">Živé ukázky</a></li>
+					<li><a href="kontakt.html">Kontakt & Rezervace</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Kontakt & Booking</h4>
+				<ul class="footer-contact-list">
+					<li><i class="fas fa-user"></i> Ing. Miroslav Bečička (Manažer)</li>
+					<li><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></li>
+					<li><i class="fas fa-envelope"></i> <a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></li>
+					<li><i class="fas fa-map-marker-alt"></i> Pardubice, Hradec Králové a ČR</li>
+				</ul>
 			</div>
 		</div>
+
 		<div class="container footer-bottom">
-			<p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
+			<p>© <span id="current-year"></span> BS Band. Všechna práva vyhrazena. 100% Live Music.</p>
 		</div>
 	</footer>
 
 	<script src="script.js"></script>
+	<script>
+		function setGenreFilter(genre) {
+			const input = document.getElementById('repertoire-filter');
+			if (input) {
+				input.value = genre;
+				input.dispatchEvent(new Event('input', { bubbles: true }));
+			}
+		}
+	</script>
 </body>
 
 </html>

@@ -4,172 +4,275 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kontakt &amp; Poptávka: BS Band Pardubice | Kapela na svatbu, ples, zábavu (Východní Čechy)</title>
+	<title>Kontakt & Rezervace termínu | BS Band Pardubice (Kapela na ples, zábavu, svatbu)</title>
 	<meta name="description"
-		content="Kontaktujte BS Band (Pardubice) pro nezávaznou poptávku. Kapela na svatby, plesy, firemní akce a zábavy v Pardubicích, Hradci Králové a Východních Čechách. Těšíme se na vás!">
+		content="Kontaktujte kapelu BS Band (Pardubice) pro nezávaznou poptávku termínu. Živá hudba pro plesy, taneční zábavy, oslavy a svatby ve Východních Čechách i celé ČR.">
 	<meta name="keywords"
 		content="kontakt kapela, poptávka kapela, bs band, kapela pardubice, kapela hradec králové, kapela východní čechy, kapela na svatbu, kapela na ples, hudba na zábavu, rezervace termínu">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<link rel="stylesheet" href="style.css" title="Styl 1" id="theme-style-1">
+	<link rel="stylesheet" href="style.css">
 
 	<link href="assets/images/logoBSband.jpg" rel="icon" type="image/jpg" />
 	<link href="assets/images/logoBSband.jpg" rel="shortcut icon" type="image/jpg" />
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K2S6F0H8K"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() { dataLayer.push(arguments); }
 	gtag('js', new Date());
-
 	gtag('config', 'G-2K2S6F0H8K');
 </script>
 
 <body>
+
+	<!-- SITE HEADER -->
 	<header class="site-header">
 		<div class="container header-container">
 			<div class="logo">
 				<a href="index.html">
-					<span class="logo-text">BS band</span>
+					<div class="logo-badge">
+						<img src="assets/images/logoBSband.jpg" alt="BS Band logo" class="logo-img">
+					</div>
+					<div class="logo-text-group">
+						<span class="logo-text">BS <span>BAND</span></span>
+						<span class="logo-sub">Živá kapela • Pardubice</span>
+					</div>
 				</a>
 			</div>
+
 			<nav class="main-nav">
-				<button id="menu-toggle" class="menu-toggle" aria-label="Přepnout menu" aria-expanded="false">
-					<svg viewBox="0 0 100 80" width="30" height="30" class="hamburger-icon">
-						<rect width="100" height="12" rx="8"></rect>
-						<rect y="34" width="100" height="12" rx="8"></rect>
-						<rect y="68" width="100" height="12" rx="8"></rect>
-					</svg>
-					<svg viewBox="0 0 80 80" width="30" height="30" class="close-icon">
-						<line x1="20" y1="20" x2="60" y2="60" stroke-width="10" stroke-linecap="round" />
-						<line x1="60" y1="20" x2="20" y2="60" stroke-width="10" stroke-linecap="round" />
-					</svg>
-				</button>
 				<ul class="nav-list" id="nav-list">
 					<li><a href="index.html">Úvod</a></li>
+					<li><a href="index.html#events">Plesy & Zábavy</a></li>
+					<li><a href="index.html#band">O kapele</a></li>
 					<li><a href="repertoar.html">Repertoár</a></li>
 					<li><a href="ukazky.html">Ukázky</a></li>
 					<li><a href="kontakt.html" class="active">Kontakt</a></li>
 				</ul>
+
+				<div class="header-actions">
+					<a href="tel:+420734393711" class="btn-phone">
+						<i class="fas fa-phone-alt"></i> +420 734 393 711
+					</a>
+					<a href="#booking-form-anchor" class="btn btn-primary">
+						<i class="fas fa-calendar-check"></i> Poptat termín
+					</a>
+					<button id="menu-toggle" class="menu-toggle" aria-label="Přepnout menu" aria-expanded="false">
+						<svg viewBox="0 0 100 80" width="24" height="24" class="hamburger-icon">
+							<rect width="100" height="12" rx="6"></rect>
+							<rect y="34" width="100" height="12" rx="6"></rect>
+							<rect y="68" width="100" height="12" rx="6"></rect>
+						</svg>
+						<svg viewBox="0 0 80 80" width="24" height="24" class="close-icon">
+							<line x1="20" y1="20" x2="60" y2="60" stroke-width="8" stroke-linecap="round" />
+							<line x1="60" y1="20" x2="20" y2="60" stroke-width="8" stroke-linecap="round" />
+						</svg>
+					</button>
+				</div>
 			</nav>
 		</div>
 	</header>
 
 	<main>
-		<section class="page-title-section bg-dark-alt animated-section">
+		<!-- PAGE HEADER -->
+		<section class="content-section text-center" style="padding: 4.5rem 0 2rem;">
 			<div class="container">
-				<h1>Napište nám o termín (Poptávka kapely)</h1>
-				<p>Máte zájem o vystoupení naší <strong>kapely z Pardubic</strong>? Ozvěte se nám! Jsme tu pro vás v
-					celých <strong>Východních Čechách</strong>.</p>
+				<span class="section-tag">Rychlé spojení s kapelou</span>
+				<h1>Kontakt & Rezervace termínu</h1>
+				<p style="max-width: 720px; margin: 0 auto; font-size: 1.1rem;">
+					Máte zájem o vystoupení naší <strong>kapely z Pardubic</strong> na plese, zábavě, svatbě či oslavě? Ozvěte se nám telefonicky, emailem nebo vyplňte formulář níže.
+				</p>
 			</div>
 		</section>
 
-		<section id="contact-details" class="content-section animated-section">
-			<div class="container contact-grid">
-				<div class="contact-info card animated-item">
-					<h2>Kontaktní údaje BS Band</h2>
-					<p><i class="fas fa-user icon-left"></i><strong>Manažer kapely:</strong> Ing. Miroslav Bečička</p>
-					<p><i class="fas fa-phone icon-left"></i><strong>Telefon:</strong> <a href="tel:+420734393711">+420
-							734 393 711</a></p>
-					<p><i class="fas fa-envelope icon-left"></i><strong>Email:</strong> <a
-							href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
-					<p><i class="fas fa-map-marker-alt icon-left"></i><strong>Působíme v:</strong>
-						<strong>Pardubice</strong>, <strong>Hradec Králové</strong>, celé <strong>Východní
-							Čechy</strong>
-					</p>
-					<hr>
-					<p><strong>Sledujte naši kapelu:</strong></p>
-					<div class="social-links-contact">
-						<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener"
-							class="social-icon facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-						<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener"
-							class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
+		<!-- CONTACT DETAILS & FORM -->
+		<section class="content-section" style="padding-top: 1rem;">
+			<div class="container">
+				<div class="contact-grid">
+
+					<!-- CONTACT INFO CARD -->
+					<div class="contact-card">
+						<div>
+							<span class="section-tag">Manažer kapely</span>
+							<h3 style="margin-top: 0.5rem;">Ing. Miroslav Bečička</h3>
+							<p>Kapelník, kytarista a kontaktní osoba pro veškerou organizaci vystoupení, technické požadavky a smlouvy.</p>
+						</div>
+
+						<div style="display: flex; flex-direction: column; gap: 1.25rem;">
+							<div class="contact-item">
+								<div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+								<div>
+									<div class="contact-label">Telefon (přímé volání)</div>
+									<div class="contact-value"><a href="tel:+420734393711">+420 734 393 711</a></div>
+								</div>
+							</div>
+
+							<div class="contact-item">
+								<div class="contact-icon"><i class="fas fa-envelope"></i></div>
+								<div>
+									<div class="contact-label">Email</div>
+									<div class="contact-value"><a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></div>
+								</div>
+							</div>
+
+							<div class="contact-item">
+								<div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+								<div>
+									<div class="contact-label">Působiště kapely</div>
+									<div class="contact-value">Pardubice, Hradec Králové, Východní Čechy & celá ČR</div>
+								</div>
+							</div>
+						</div>
+
+						<div style="margin-top: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+							<div class="contact-label" style="margin-bottom: 0.8rem;">Sledujte BS Band na sítích:</div>
+							<div class="social-pill-list">
+								<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" class="social-pill facebook">
+									<i class="fab fa-facebook-f"></i> Facebook
+								</a>
+								<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener" class="social-pill instagram">
+									<i class="fab fa-instagram"></i> Instagram
+								</a>
+								<a href="https://www.youtube.com/@Bonesaver" target="_blank" rel="noopener" class="social-pill youtube">
+									<i class="fab fa-youtube"></i> YouTube
+								</a>
+							</div>
+						</div>
+
+						<div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: auto; padding-top: 1.5rem;">
+							<a href="tel:+420734393711" class="btn btn-primary" style="flex: 1;">
+								<i class="fas fa-phone-alt"></i> Zavolat kapele
+							</a>
+							<a href="mailto:bonesavermusic@gmail.com" class="btn btn-secondary" style="flex: 1;">
+								<i class="fas fa-envelope"></i> Napsat email
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="contact-message card animated-item">
-					<h2>Rychlá poptávka / Dotaz na kapelu</h2>
-					<p>Nejrychlejší způsob, jak zjistit dostupnost naší <strong>hudební skupiny</strong> nebo se na
-						cokoliv zeptat, je zavolat nebo poslat email. Ozveme se vám co nejdříve.</p>
-					<p>Pro rychlejší vyřízení poptávky (<strong>kapela na ples</strong>, <strong>kapela na
-							svatbu</strong>, <strong>hudba na zábavu</strong>...) prosím uveďte:</p>
-					<ul>
-						<li>Datum akce</li>
-						<li>Místo konání (např. <strong>Pardubice</strong>, <strong>Hradec Králové</strong>, obec v
-							<strong>Východních Čechách</strong>)
-						</li>
-						<li>Typ akce (svatba, ples, oslava, firemní večírek, zábava...)</li>
-						<li>Předpokládaný čas začátku a konce hraní</li>
-					</ul>
-					<div class="contact-buttons">
-						<a href="mailto:bonesavermusic@gmail.com?subject=Poptávka%20vystoupení%20-%20Kapela%20BS%20Band%20(Pardubice)&body=Dobrý%20den,%0A%0Aměl(a)%20bych%20zájmem%20o%20nezávaznou%20poptávku%20vystoupení%20Vaší%20kapely%20BS%20Band.%0A%0ADatum%20akce:%20%0AMísto%20konání%20(město/obec,%20Východní%20Čechy):%20%0ATyp%20akce%20(svatba,%20ples,%20zábava...):%20%0APředpokládaný%20čas%20hraní:%20%0A%0ADalší%20informace%20nebo%20dotazy:%0A%0A%0AS%20pozdravem,%0A%0A[Vaše%20Jméno]%0A[Váš%20Telefon%20(Volitelné)]"
-							class="btn btn-primary"><i class="fas fa-paper-plane"></i> Poslat Email Poptávku</a>
-						<a href="tel:+420734393711" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Zavolat
-							Kapele</a>
+
+					<!-- BOOKING FORM CARD -->
+					<div class="contact-card" id="booking-form-anchor">
+						<div>
+							<span class="section-tag gold">Poptávkový formulář</span>
+							<h3 style="margin-top: 0.5rem;">Nezávazná poptávka vystoupení</h3>
+							<p>Vyplňte základní detaily akce. Ozveme se vám do 24 hodin s ověřením termínu a návrhem možností.</p>
+						</div>
+
+						<form action="https://api.web3forms.com/submit" method="POST" class="booking-form contact-form">
+							<input type="hidden" name="access_key" value="e84a3a8c-ba7b-47af-a45e-bd69ce87b8a1">
+							<input type="hidden" name="subject" value="Nová poptávka termínu - BS Band">
+							<input type="hidden" name="from_name" value="BS Band Web">
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="contact-event-type">Typ události *</label>
+									<select id="contact-event-type" name="event-type" class="form-control" required>
+										<option value="" disabled selected>Vyberte typ akce</option>
+										<option value="Maturitní / Společenský ples">🎓 Společenský / Maturitní ples</option>
+										<option value="Taneční zábava / Letní parket">🎸 Taneční zábava / Letní parket</option>
+										<option value="Svatba">💍 Svatba</option>
+										<option value="Oslava / Narozeniny">🎉 Narozeninová / Soukromá oslava</option>
+										<option value="Firemní večírek">🏢 Firemní večírek</option>
+										<option value="Obecní slavnost / Festival">🏛 Obecní slavnost / Festival</option>
+										<option value="Jiné">Jiné</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="contact-event-date">Předpokládané datum *</label>
+									<input type="date" id="contact-event-date" name="event-date" class="form-control" required>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="contact-event-location">Místo konání (obec / sál) *</label>
+									<input type="text" id="contact-event-location" name="event-location" class="form-control" placeholder="např. Pardubice, Chrudim, Hradec..." required>
+								</div>
+
+								<div class="form-group">
+									<label for="contact-name">Vaše jméno nebo pořadatel *</label>
+									<input type="text" id="contact-name" name="name" class="form-control" placeholder="Vaše jméno / Spolek / Třída" required>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group">
+									<label for="contact-phone">Telefonní kontakt *</label>
+									<input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="+420 777 000 000" required>
+								</div>
+
+								<div class="form-group">
+									<label for="contact-email">Email *</label>
+									<input type="email" id="contact-email" name="email" class="form-control" placeholder="vas@email.cz" required>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="contact-message">Podrobnosti o akci / Zvláštní přání</label>
+								<textarea id="contact-message" name="message" class="form-control" placeholder="Orientační čas začátku a konce, specifické skladby, velikost sálu..." rows="3"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem; font-size: 1.05rem;">
+								<i class="fas fa-paper-plane"></i> Odeslat nezávaznou poptávku
+							</button>
+						</form>
 					</div>
+
 				</div>
 			</div>
 		</section>
 
 	</main>
 
+	<!-- SITE FOOTER -->
 	<footer class="site-footer">
 		<div class="container footer-grid">
-			<div class="footer-form">
-				<h3>Napište nám</h3>
-				<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-					<input type="hidden" name="access_key" value="e84a3a8c-ba7b-47af-a45e-bd69ce87b8a1">
-					<input type="hidden" name="subject" value="Nová poptávka - BS Band">
-					<input type="hidden" name="from_name" value="BS Band web">
-					<div class="form-group">
-						<input type="text" name="name" placeholder="Vaše jméno" required aria-label="Jméno">
-					</div>
-					<div class="form-group">
-						<input type="email" name="email" placeholder="Váš email" required aria-label="Email">
-					</div>
-					<div class="form-group">
-						<select name="event-type" aria-label="Typ akce">
-							<option value="" disabled selected>Typ akce</option>
-							<option value="svatba">Svatba</option>
-							<option value="ples">Ples</option>
-							<option value="oslava">Oslava</option>
-							<option value="firemni">Firemní večírek</option>
-							<option value="jine">Jiné</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<textarea name="message" placeholder="Vaše zpráva" rows="4" required
-							aria-label="Zpráva"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Odeslat</button>
-				</form>
+			<div class="footer-brand">
+				<div class="logo-text" style="margin-bottom: 0.5rem;">BS <span>BAND</span></div>
+				<p>100% živá rock-popová a společenská kapela z Pardubic pro plesy, taneční zábavy, svatby a oslavy.</p>
+				<div class="footer-social-icons">
+					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/@Bonesaver" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+				</div>
 			</div>
-			<div class="footer-info">
-				<h3>Kontakt</h3>
-				<div class="contact-details">
-					<p><i class="fas fa-user"></i> Ing. Miroslav Bečička</p>
-					<p><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></p>
-					<p><i class="fas fa-envelope"></i> <a
-							href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></p>
-					<p><i class="fas fa-map-marker-alt"></i> Pardubice &amp; Východní Čechy</p>
-				</div>
-				<div class="footer-social-simple">
-					<a href="https://facebook.com/bonesaver" target="_blank" rel="noopener" aria-label="Facebook"><i
-							class="fab fa-facebook-f"></i></a>
-					<a href="https://www.instagram.com/bonesaver.cz" target="_blank" rel="noopener"
-						aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-				</div>
+
+			<div class="footer-col">
+				<h4>Rychlá navigace</h4>
+				<ul class="footer-links">
+					<li><a href="index.html">Úvod</a></li>
+					<li><a href="index.html#events">Plesy & Zábavy</a></li>
+					<li><a href="index.html#band">O kapele</a></li>
+					<li><a href="repertoar.html">Repertoár</a></li>
+					<li><a href="ukazky.html">Živé ukázky</a></li>
+					<li><a href="kontakt.html">Kontakt & Rezervace</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Kontakt & Booking</h4>
+				<ul class="footer-contact-list">
+					<li><i class="fas fa-user"></i> Ing. Miroslav Bečička (Manažer)</li>
+					<li><i class="fas fa-phone"></i> <a href="tel:+420734393711">+420 734 393 711</a></li>
+					<li><i class="fas fa-envelope"></i> <a href="mailto:bonesavermusic@gmail.com">bonesavermusic@gmail.com</a></li>
+					<li><i class="fas fa-map-marker-alt"></i> Pardubice, Hradec Králové a ČR</li>
+				</ul>
 			</div>
 		</div>
+
 		<div class="container footer-bottom">
-			<p>© <span id="current-year"></span> BS band. Všechna práva vyhrazena.</p>
+			<p>© <span id="current-year"></span> BS Band. Všechna práva vyhrazena. 100% Live Music.</p>
 		</div>
 	</footer>
 
